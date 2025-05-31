@@ -9,6 +9,7 @@ namespace classes
     public class Lists
     {
         public static List<Person> PersonList = new List<Person>();
+        public static List<user> UserList = new List<user>();
     }
 }
         

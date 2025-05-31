@@ -12,3 +12,10 @@ D:\c#\peroject\classes\obj\Debug\classes.csproj.AssemblyReference.cache
 D:\c#\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
 D:\c#\peroject\classes\obj\Debug\classes.exe
 D:\c#\peroject\classes\obj\Debug\classes.pdb
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\bin\Debug\classes.exe.config
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\bin\Debug\classes.exe
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\bin\Debug\classes.pdb
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\obj\Debug\classes.exe
+C:\Users\youse\Desktop\Test\ConsoleApp2\peroject1\peroject\classes\obj\Debug\classes.pdb
