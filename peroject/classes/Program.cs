@@ -14,29 +14,42 @@ namespace classes
         {
             while (true)
             {
-                Console.WriteLine("1 : create an account");
-                Console.WriteLine("2 : Login to your account");
-                int EnterOption = int.Parse(Console.ReadLine());
+                Console.WriteLine("Welcome To Hostel Managing Application ");
+                Console.WriteLine("_______________________________________");
+                Console.WriteLine('\n');
+                Console.WriteLine("1 : Login");
+                Console.WriteLine("2 : Sign Up");
 
-                switch (EnterOption) 
+                Console.Write("Please Enter The Number Of Your Choice: ");
+
+                int LoginOption = int.Parse(Console.ReadLine());
+
+                switch (LoginOption) 
                 {
                     case 1:
-                        Console.WriteLine("1 : Im student ");
-                        Console.WriteLine("2 : Im Hostel Manager ");
-                        int SignUpOption = int.Parse(Console.ReadLine());
-
-                        switch (SignUpOption)
-                        {
-                            case 1: 
-
-
-
-                        }
 
                         break;
-                        
-                
 
+                    case 2:
+                        Console.Write("please Enter Your Name :");
+                        string Name = Console.ReadLine();
+                        Console.Write("please Enter Your FamilyName :");
+                        string Family = Console.ReadLine();
+                        Console.Write("please Enter Your National Code :");
+                        long nationalcode = Convert.ToInt64(Console.ReadLine());
+                        Console.Write("please Enter Your PhoneNumber :");
+                        string phonenumber = Console.ReadLine();
+                        Console.Write("please Enter Your Address :");
+                        string address = Console.ReadLine();
+
+                        Person NewPerson = new Person(Name , Family , nationalcode , phonenumber , address);
+
+                        Lists.PersonList.Add(NewPerson);
+
+                        
+
+
+                        break;
                 }
             }
         }

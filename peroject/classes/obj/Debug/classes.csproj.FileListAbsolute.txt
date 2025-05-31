@@ -1,0 +1,14 @@
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\bin\Debug\classes.exe.config
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\bin\Debug\classes.exe
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\bin\Debug\classes.pdb
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\obj\Debug\classes.exe
+C:\Users\Matin\Desktop\c sharp project (ateria)\peroject\classes\obj\Debug\classes.pdb
+D:\c#\peroject\classes\bin\Debug\classes.exe.config
+D:\c#\peroject\classes\bin\Debug\classes.exe
+D:\c#\peroject\classes\bin\Debug\classes.pdb
+D:\c#\peroject\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+D:\c#\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+D:\c#\peroject\classes\obj\Debug\classes.exe
+D:\c#\peroject\classes\obj\Debug\classes.pdb
