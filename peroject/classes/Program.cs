@@ -106,6 +106,7 @@ namespace classes
             switch (menuoption)
             {
                 case 1:
+                    HostelManagement.AddHostel();
 
                     break;
 

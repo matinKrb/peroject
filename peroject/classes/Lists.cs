@@ -9,7 +9,15 @@ namespace classes
     public class Lists
     {
         public static List<Person> PersonList = new List<Person>();
+
         public static List<user> UserList = new List<user>();
+
+        public static List<Hostel> HostelList = new List<Hostel>();
+
+        public static List<Block> BlockList = new List<Block>();
+
+        public static List<HostelManager> HostelManagerList = new List<HostelManager>();
+
     }
 }
         

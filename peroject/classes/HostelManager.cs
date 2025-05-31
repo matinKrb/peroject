@@ -17,5 +17,22 @@ namespace classes
             Position = position;
             MnHostel = mnHostel;
         }
+
+        public static HostelManager FindHostelManagerByFamily(string family)
+        {
+            HostelManager result=null;
+            for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+            {
+                if (Lists.HostelManagerList[i].Family==family)
+                {
+                     result=Lists.HostelManagerList[i];
+                }
+                else
+                {
+                    Console.WriteLine("Hostel Manager Not Found");
+                }
+            }
+            return result;
+        }
     }
 }
