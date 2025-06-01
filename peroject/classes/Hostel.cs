@@ -27,7 +27,7 @@ namespace classes
         }
         public HostelManager ManagerName { get; set; }
         public List<Block> Blocks { get; set; }
-
+        /// لیست بلاک رو توی لیست ها تعریف میکنیم به صورت یه اسرینگ میگیریم بعد به لیست بلاک اضافه میکنیم 
         public Hostel(string name, string address, int capacity, HostelManager managerName, List<Block> blocks)
         {
             Name = name;

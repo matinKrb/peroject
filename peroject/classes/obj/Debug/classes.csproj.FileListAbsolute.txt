@@ -26,3 +26,10 @@ C:\Users\youse\Desktop\Test\main project\main project\peroject\classes\obj\Debug
 C:\Users\youse\Desktop\Test\main project\main project\peroject\classes\bin\Debug\classes.exe.config
 C:\Users\youse\Desktop\Test\main project\main project\peroject\classes\bin\Debug\classes.exe
 C:\Users\youse\Desktop\Test\main project\main project\peroject\classes\bin\Debug\classes.pdb
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\bin\Debug\classes.exe.config
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\bin\Debug\classes.exe
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\bin\Debug\classes.pdb
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\obj\Debug\classes.exe
+C:\Users\Matin\Desktop\dddddddddddddddddddd\peroject1\peroject\classes\obj\Debug\classes.pdb

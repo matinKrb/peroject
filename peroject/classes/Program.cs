@@ -19,12 +19,13 @@ namespace classes
 
             while (true)
             {
+                Console.Clear();
                 Console.WriteLine("1 : Login");
                 Console.WriteLine("2 : Sign Up");
 
                 Console.Write("Please Enter The Number Of Your Choice: ");
 
-                int LoginOption = int.Parse(Console.ReadLine());
+                var LoginOption = int.Parse(Console.ReadLine());
 
                 switch (LoginOption)
                 {

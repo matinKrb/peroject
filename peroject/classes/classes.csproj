@@ -49,6 +49,7 @@
     <Compile Include="HostelManagement.cs" />
     <Compile Include="Hostel.cs" />
     <Compile Include="HostelManager.cs" />
+    <Compile Include="HostelManagerManagment.cs" />
     <Compile Include="Lists.cs" />
     <Compile Include="Person.cs" />
     <Compile Include="Program.cs" />

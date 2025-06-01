@@ -1,54 +1,58 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\",
+  "WorkspaceRootPath": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\hostelmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\youse\\desktop\\test\\main project\\main project\\peroject\\classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\blockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\blockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\blockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\blockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -61,93 +65,105 @@
           "SelectedChildIndex": 1,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Program.cs",
+              "RelativeDocumentMoniker": "classes\\Program.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Program.cs",
+              "RelativeToolTip": "classes\\Program.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAAQwGEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T06:45:33.281Z",
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "HostelManagement.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\HostelManagement.cs",
-              "RelativeDocumentMoniker": "classes\\HostelManagement.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\HostelManagement.cs",
-              "RelativeToolTip": "classes\\HostelManagement.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBgAAABuAAAAAAAAAA==",
+              "Title": "HostelManagerManagment.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
+              "RelativeDocumentMoniker": "classes\\HostelManagerManagment.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs*",
+              "RelativeToolTip": "classes\\HostelManagerManagment.cs*",
+              "ViewState": "AgIAACUAAAAAAAAAAAAqwDIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T12:31:29.244Z",
+              "WhenOpened": "2025-06-01T12:39:46.632Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\User.cs",
-              "RelativeDocumentMoniker": "classes\\User.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\User.cs",
-              "RelativeToolTip": "classes\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T11:02:08.263Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Hostel.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Hostel.cs",
-              "RelativeDocumentMoniker": "classes\\Hostel.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Hostel.cs",
-              "RelativeToolTip": "classes\\Hostel.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwCAAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T07:16:37.523Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
               "Title": "HostelManager.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\HostelManager.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManager.cs",
               "RelativeDocumentMoniker": "classes\\HostelManager.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\HostelManager.cs",
-              "RelativeToolTip": "classes\\HostelManager.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB8AAAAoAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManager.cs*",
+              "RelativeToolTip": "classes\\HostelManager.cs*",
+              "ViewState": "AgIAABIAAAAAAAAAAAAYwDEAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:15:13.413Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Program.cs",
-              "RelativeDocumentMoniker": "classes\\Program.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Program.cs",
-              "RelativeToolTip": "classes\\Program.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAAQwGwAAAAxAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "HostelManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagement.cs",
+              "RelativeDocumentMoniker": "classes\\HostelManagement.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagement.cs",
+              "RelativeToolTip": "classes\\HostelManagement.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T06:45:33.281Z"
+              "WhenOpened": "2025-05-31T12:31:29.244Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 8,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\User.cs",
+              "RelativeDocumentMoniker": "classes\\User.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\User.cs",
+              "RelativeToolTip": "classes\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T11:02:08.263Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Hostel.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Hostel.cs",
+              "RelativeDocumentMoniker": "classes\\Hostel.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Hostel.cs",
+              "RelativeToolTip": "classes\\Hostel.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:16:37.523Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
               "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Equipment.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Equipment.cs",
               "RelativeDocumentMoniker": "classes\\Equipment.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Equipment.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Equipment.cs",
               "RelativeToolTip": "classes\\Equipment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAEAAAAAAAAAAAAAkwAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:40:45.146Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 11,
               "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Room.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Room.cs",
               "RelativeDocumentMoniker": "classes\\Room.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Room.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Room.cs",
               "RelativeToolTip": "classes\\Room.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAADUAAAAAAAAAAAAgwAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:35:58.516Z"
             },
@@ -155,34 +171,35 @@
               "$type": "Document",
               "DocumentIndex": 4,
               "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Person.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Person.cs",
               "RelativeDocumentMoniker": "classes\\Person.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Person.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Person.cs",
               "RelativeToolTip": "classes\\Person.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T07:14:18.174Z"
+              "WhenOpened": "2025-05-30T07:14:18.174Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Lists.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Lists.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Lists.cs",
               "RelativeDocumentMoniker": "classes\\Lists.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Lists.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Lists.cs",
               "RelativeToolTip": "classes\\Lists.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-31T09:42:42.022Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "BlockManager.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\BlockManager.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\BlockManager.cs",
               "RelativeDocumentMoniker": "classes\\BlockManager.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\BlockManager.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\BlockManager.cs",
               "RelativeToolTip": "classes\\BlockManager.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -192,25 +209,40 @@
               "$type": "Document",
               "DocumentIndex": 9,
               "Title": "Block.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Block.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Block.cs",
               "RelativeDocumentMoniker": "classes\\Block.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Block.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Block.cs",
               "RelativeToolTip": "classes\\Block.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAgwAgAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:20:43.792Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 7,
               "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Student.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Student.cs",
               "RelativeDocumentMoniker": "classes\\Student.cs",
-              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\main project\\main project\\peroject\\classes\\Student.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Student.cs",
               "RelativeToolTip": "classes\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T07:15:45.768Z"
+              "WhenOpened": "2025-05-30T07:15:45.768Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 62,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             }
           ]
         }
