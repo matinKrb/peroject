@@ -27,7 +27,25 @@ namespace classes
         }
         public HostelManager ManagerName { get; set; }
         public List<Block> Blocks { get; set; }
-        /// لیست بلاک رو توی لیست ها تعریف میکنیم به صورت یه اسرینگ میگیریم بعد به لیست بلاک اضافه میکنیم 
+
+        public static Hostel FindHostelByName(string name)
+        {
+            Hostel result = null;
+            for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+            {
+                if (Lists.HostelList[i].Name == name)
+                {
+                    result = Lists.HostelList[i];
+                }
+                else
+                {
+                    Console.WriteLine("Hostel Not Found");
+                }
+            }
+            return result;
+        }
+
+
         public Hostel(string name, string address, int capacity, HostelManager managerName, List<Block> blocks)
         {
             Name = name;
@@ -35,6 +53,13 @@ namespace classes
             Capacity = capacity;
             ManagerName = managerName;
             Blocks = blocks;
+        }
+        public Hostel(string name, string address, int capacity, HostelManager managerName)
+        {
+            Name = name;
+            Address = address;
+            Capacity = capacity;
+            ManagerName = managerName;
         }
     }
 }

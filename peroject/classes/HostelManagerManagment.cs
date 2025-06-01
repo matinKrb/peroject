@@ -6,10 +6,42 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    class HostelManagerManagment
+    public class HostelManagerManagment
     {
+
+        public static void DisplayHostelManagerMenu()
+        {
+            Console.Clear();
+            Console.WriteLine("1 : Add A New Hostel Manager");
+            Console.WriteLine("2 : Delete A Hostel Manager");
+            Console.WriteLine("3 : Edit A Hostel Manager Info");
+            Console.WriteLine("4 : Display Hostels Manager List");
+
+            Console.Write("Please Enter The Option Number : ");
+            int HostelManagerManagementOption = int.Parse(Console.ReadLine());
+
+            switch (HostelManagerManagementOption)
+            {
+                case 1:
+                    AddHostelManager();
+                    break;
+
+                case 2:
+                    RemoveHostelManager();
+                    break;
+
+                case 3:
+                    EditHostelManager();
+                    break;
+
+                case 4:
+                    DisplayHostelManager();
+                    break;
+            }
+        }
         public static void AddHostelManager() 
         {
+            Console.Clear();
             Console.Write("Please Enter The Name Of Hostel Manager :");
             string name = Console.ReadLine(); 
             Console.Write("Please Enter The Family Of Hostel Manager :");
@@ -31,6 +63,8 @@ namespace classes
 
         public static void RemoveHostelManager() 
         {
+            Console.Clear();
+
             Console.WriteLine("List Of Hostel Managers With National Code:");
             for (int i = 0; i < Lists.HostelManagerList.Count; i++)
             {
@@ -47,8 +81,10 @@ namespace classes
 
         }
 
-        public static void EditHostelManager() 
+        public static void EditHostelManager()
         {
+            Console.Clear();
+
             Console.WriteLine("List Of Hostel Managers With National Code:");
             for (int i = 0; i < Lists.HostelManagerList.Count; i++)
             {
@@ -58,7 +94,7 @@ namespace classes
 
             Console.WriteLine('\n');
 
-            Console.Write("Please Enter The NationalCode Wich You Wanna Edit :");
+            Console.Write("Please Enter The NationalCode Of Hostel Manager Wich You Wanna Edit :");
             long nationalcode = Convert.ToInt64(Console.ReadLine());
 
             HostelManager ToEditHostelManager = HostelManager.FindHostelManagerByNationalCode(nationalcode);
@@ -85,8 +121,10 @@ namespace classes
 
         }
 
-        public static void Display() 
+        public static void DisplayHostelManager() 
         {
+            Console.Clear();
+
             Console.WriteLine("List Of Hostel Managers:");
             for (int i = 0; i < Lists.HostelManagerList.Count; i++)
             {

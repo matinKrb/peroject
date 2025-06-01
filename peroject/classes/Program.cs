@@ -96,25 +96,30 @@ namespace classes
         }
         public static void MainMenu()
         {
+            Console.Clear();
             Console.WriteLine("1 : Hostels Management ");
             Console.WriteLine("2 : Blocks Management ");
             Console.WriteLine("3 : Persons Management ");
             Console.WriteLine("4 : Equipment Management ");
             Console.WriteLine("5 : Reporting ");
 
+            Console.Write("Please Enter The Option Number : ");
+
             int menuoption = int.Parse(Console.ReadLine());
 
             switch (menuoption)
             {
                 case 1:
-                    HostelManagement.AddHostel();
-
+                    Console.Clear();
+                    HostelManagement.DisplayHostelManagmentMenu();
                     break;
 
                 case 2:
                     break;
 
                 case 3:
+                    Console.Clear();
+                    PersonManagement.DisplayPersonManagemantMenu();
                     break;
 
                 case 4:
