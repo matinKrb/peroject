@@ -69,7 +69,10 @@ namespace classes
 
             Hostel NewHostel = new Hostel(HostelName, HostelAddress, HostelCapacity, HostelManagerWhoToBeManager);
             Lists.HostelList.Add(NewHostel);
-
+            Console.WriteLine('\n');
+            Console.WriteLine("Hostel Added Successfuly");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
         public static void RemoveHostelByName()
         {
@@ -87,7 +90,10 @@ namespace classes
             string HostelNameToDelete = Console.ReadLine();
 
             Lists.HostelList.Remove(Hostel.FindHostelByName(HostelNameToDelete));
-
+            Console.WriteLine('\n');
+            Console.WriteLine("Hostel Removed Successfuly");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
 
         public static void EditHostel()
@@ -126,7 +132,10 @@ namespace classes
             ToEditHostel.Capacity = capacity;
             ToEditHostel.ManagerName = NewHostelManager;
 
-
+            Console.WriteLine('\n');
+            Console.WriteLine("Hostel Edited Successfuly");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
         public static void DisplayHostel()
         {
@@ -137,8 +146,11 @@ namespace classes
             {
                 Console.WriteLine($"{i + 1} :Name: {Lists.HostelList[i].Name} , Address : {Lists.HostelList[i].Address}, Capacity : {Lists.HostelList[i].Capacity} , Name Of Hostel Manager : {Lists.HostelList[i].ManagerName.Name}");
                 Console.WriteLine('\n');
-            }
 
+            }
+            
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
 
     }

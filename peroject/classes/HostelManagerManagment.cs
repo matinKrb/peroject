@@ -57,7 +57,10 @@ namespace classes
 
             HostelManager NewHostelManager = new HostelManager(position,name , family , phonenumber , nationalcode , address );
             Lists.HostelManagerList.Add(NewHostelManager);
-
+            Console.WriteLine('\n');
+            Console.WriteLine("Hostel Manager Added Successfuly");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
 
         }
 
@@ -77,7 +80,10 @@ namespace classes
             long nationalcode = Convert.ToInt64(Console.ReadLine());
 
             Lists.HostelManagerList.Remove(HostelManager.FindHostelManagerByNationalCode(nationalcode));
-
+            Console.WriteLine('\n');
+            Console.WriteLine("Hostel Manager Removed Successfuly");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
 
         }
 
@@ -118,7 +124,10 @@ namespace classes
             ToEditHostelManager.NationalCode = editednationalcode;
             ToEditHostelManager.PhoneNumber = phonenumber;
             ToEditHostelManager.Addres = address;
-
+            Console.WriteLine('\n');
+            Console.WriteLine("Hostel Manager Edited Successfuly");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
 
         public static void DisplayHostelManager() 
@@ -131,7 +140,10 @@ namespace classes
                 Console.WriteLine($"{i + 1} : {Lists.HostelManagerList[i].Name} {Lists.HostelManagerList[i].Family} {Lists.HostelManagerList[i].NationalCode} {Lists.HostelManagerList[i].Position} {Lists.HostelManagerList[i].PhoneNumber} {Lists.HostelManagerList[i].Addres}");
                 Console.WriteLine('\n');
             }
-
+            
+            
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
     }
 }

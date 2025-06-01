@@ -3,32 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\personmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\personmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\personmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\personmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -66,72 +66,20 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Program.cs",
               "RelativeDocumentMoniker": "classes\\Program.cs",
               "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Program.cs",
               "RelativeToolTip": "classes\\Program.cs",
-              "ViewState": "AgIAAFsAAAAAAAAAAAAQwGIAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAADQAAAAAAAAAAAApwHAAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T06:45:33.281Z",
               "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PersonManagement.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\PersonManagement.cs",
-              "RelativeDocumentMoniker": "classes\\PersonManagement.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\PersonManagement.cs",
-              "RelativeToolTip": "classes\\PersonManagement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T14:50:38.973Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "HostelManagerManagment.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
-              "RelativeDocumentMoniker": "classes\\HostelManagerManagment.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
-              "RelativeToolTip": "classes\\HostelManagerManagment.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAAQwH4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-01T12:39:46.632Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HostelManager.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManager.cs",
-              "RelativeDocumentMoniker": "classes\\HostelManager.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManager.cs",
-              "RelativeToolTip": "classes\\HostelManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAA+AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-30T07:15:13.413Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HostelManagement.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagement.cs",
-              "RelativeDocumentMoniker": "classes\\HostelManagement.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagement.cs",
-              "RelativeToolTip": "classes\\HostelManagement.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-31T12:31:29.244Z",
               "EditorCaption": ""
             },
             {
@@ -148,13 +96,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Hostel.cs",
               "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Hostel.cs",
               "RelativeDocumentMoniker": "classes\\Hostel.cs",
               "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Hostel.cs",
               "RelativeToolTip": "classes\\Hostel.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwBAAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:16:37.523Z",
               "EditorCaption": ""
@@ -185,15 +133,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "Person.cs",
               "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Person.cs",
               "RelativeDocumentMoniker": "classes\\Person.cs",
               "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Person.cs",
               "RelativeToolTip": "classes\\Person.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T07:14:18.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "HostelManagerManagment.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
+              "RelativeDocumentMoniker": "classes\\HostelManagerManagment.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
+              "RelativeToolTip": "classes\\HostelManagerManagment.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAkwI4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T12:39:46.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PersonManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\PersonManagement.cs",
+              "RelativeDocumentMoniker": "classes\\PersonManagement.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\PersonManagement.cs",
+              "RelativeToolTip": "classes\\PersonManagement.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAwAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-01T14:50:38.973Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HostelManagement.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagement.cs",
+              "RelativeDocumentMoniker": "classes\\HostelManagement.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagement.cs",
+              "RelativeToolTip": "classes\\HostelManagement.cs",
+              "ViewState": "AgIAAGcAAAAAAAAAAAAkwJYAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-31T12:31:29.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HostelManager.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManager.cs",
+              "RelativeDocumentMoniker": "classes\\HostelManager.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManager.cs",
+              "RelativeToolTip": "classes\\HostelManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowB4AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-30T07:15:13.413Z",
               "EditorCaption": ""
             },
             {

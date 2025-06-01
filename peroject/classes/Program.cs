@@ -8,11 +8,14 @@ using System.Xml.Linq;
 
 namespace classes
 {
+
     class Program
     {
-     
+
         static void Main(string[] args)
         {
+            bool testmainmenu = true;
+
             Console.WriteLine("Welcome To Hostel Managing Application ");
             Console.WriteLine("_______________________________________");
             Console.WriteLine('\n');
@@ -42,7 +45,13 @@ namespace classes
                             {
                                 Console.Clear();
                                 Console.WriteLine("Main Menu:");
-                                MainMenu();
+                                testmainmenu = true;
+                                while (testmainmenu)
+                                {
+
+                                    MainMenu(ref testmainmenu);
+
+                                }
                             }
                             else
                             {
@@ -78,13 +87,45 @@ namespace classes
                         Lists.UserList.Add(NewUser);
 
                         Console.WriteLine("Sign Up Successful");
-                        Console.WriteLine("press any butten");
+                        Console.WriteLine("press any button");
                         Console.ReadKey();
                         Console.Clear();
 
-                        
+                        Console.WriteLine("LOGIN");
+                        Console.WriteLine("---------------------");
+                        Console.WriteLine('\n');
+
+                        Console.Write("Please Enter Your UserName :");
+                        string Fusrename = Console.ReadLine();
+
+                        Console.Write("Please Enter Your Password :");
+                        int Fpaasword = int.Parse(Console.ReadLine());
+
+                        foreach (var item in Lists.UserList)
+                        {
+                            if (Fusrename == item._Username && Fpaasword == item._Password)
+                            {
+                                Console.Clear();
+                                Console.WriteLine("Main Menu:");
+                                testmainmenu = true;
+                                while (testmainmenu)
+                                {
+                                    MainMenu(ref testmainmenu);
+
+
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Incorect UserName Or Password");
+                                Console.WriteLine("Press Any Butten");
+                                Console.ReadKey();
+                                Console.Clear();
+                            }
+                        }
+
                         break;
-                        default:
+                    default:
                         Console.WriteLine("----------------------------");
                         Console.WriteLine("Please Just Enter 1 Or 2 !");
                         Console.WriteLine("Press Any Butten");
@@ -94,7 +135,7 @@ namespace classes
                 }
             }
         }
-        public static void MainMenu()
+        public static void MainMenu(ref bool testmainmenu)
         {
             Console.Clear();
             Console.WriteLine("1 : Hostels Management ");
@@ -102,7 +143,7 @@ namespace classes
             Console.WriteLine("3 : Persons Management ");
             Console.WriteLine("4 : Equipment Management ");
             Console.WriteLine("5 : Reporting ");
-
+            Console.WriteLine("6 : Exit ");
             Console.Write("Please Enter The Option Number : ");
 
             int menuoption = int.Parse(Console.ReadLine());
@@ -126,6 +167,10 @@ namespace classes
                     break;
 
                 case 5:
+                    break;
+
+                case 6:
+                    testmainmenu = false;
                     break;
 
             }

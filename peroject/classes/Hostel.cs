@@ -10,14 +10,16 @@ namespace classes
     {
         public string Name { get; set; }
         public string Address { get; set; }
+
+        private int _Capacity;
         public int Capacity 
         {
-            get { return Capacity; }
+            get { return _Capacity; }
             set 
             {
                 if (value >= 0)
                 {
-                    Capacity = value;
+                    _Capacity = value;
                 }
                 else
                 {
