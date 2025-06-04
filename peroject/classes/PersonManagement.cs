@@ -30,7 +30,7 @@ namespace classes
                     HostelManagerManagment.DisplayHostelManagerMenu();
                     break;
 
-                case 2:
+                case 2:BlockManagerManagment.DisplayBlockManagerMenu();
                     break;
 
                 case 3:

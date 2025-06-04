@@ -200,6 +200,8 @@ namespace classes
                     break;
 
                 case 2:
+                    Console.Clear();
+                    
                     break;
 
                 case 3:

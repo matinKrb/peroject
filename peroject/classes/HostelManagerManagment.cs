@@ -198,13 +198,13 @@ namespace classes
 
                 if (ToEditHostelManager != null)
                 {
-                    Console.Write("Please Enter The Name Of Hostel Manager :");
+                    Console.Write("Please Enter The New Name Of Hostel Manager :");
                     string name = Console.ReadLine();
-                    Console.Write("Please Enter The Family Of Hostel Manager :");
+                    Console.Write("Please Enter The New Family Of Hostel Manager :");
                     string family = Console.ReadLine();
-                    Console.Write("Please Enter The Position Of Hostel Manager :");
+                    Console.Write("Please Enter The New Position Of Hostel Manager :");
                     string position = Console.ReadLine();
-                    Console.Write("Please Enter The National Code Of Hostel Manager :");
+                    Console.Write("Please Enter The New National Code Of Hostel Manager :");
                     long editednationalcode = 0;
 
                     try
@@ -225,9 +225,9 @@ namespace classes
 
                         }
                     }
-                    Console.Write("Please Enter The Phone Number Of Hostel Manager :");
+                    Console.Write("Please Enter The New Phone Number Of Hostel Manager :");
                     string phonenumber = Console.ReadLine();
-                    Console.Write("Please Enter The Address Of Hostel Manager :");
+                    Console.Write("Please Enter The New Address Of Hostel Manager :");
                     string address = Console.ReadLine();
 
                     ToEditHostelManager.Name = name;

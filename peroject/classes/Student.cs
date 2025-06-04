@@ -46,5 +46,37 @@ namespace classes
         {
 
         }
+        public static Student FindStudentByName(string family)
+        {
+            Student result = null;
+            for (int i = 0; i < Lists.StudentList.Count; i++)
+            {
+                if (Lists.StudentList[i].Family == family)
+                {
+                    result = Lists.StudentList[i]  ;
+                }
+            }
+            if (result == null)
+            {
+                Console.WriteLine("Student Not Found");
+            }
+            return result;
+        }
+        public static Student FindStudentByStudentId(long Studenid)
+        {
+            Student result = null;
+            for (int i = 0; i < Lists.StudentList.Count; i++)
+            {
+                if (Lists.StudentList[i].StudentId == Studenid)
+                {
+                    result = Lists.StudentList[i];
+                }
+            }
+            if (result == null)
+            {
+                Console.WriteLine("Student Not Found");
+            }
+            return result;
+        }
     }
 }

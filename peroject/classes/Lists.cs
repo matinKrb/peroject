@@ -20,6 +20,8 @@ namespace classes
 
         public static List<Student> StudentList = new List<Student>();  
 
+        public static List<BlockManager> blockManagersList = new List<BlockManager>();
+
     }
 }
         

@@ -183,11 +183,11 @@ namespace classes
 
                 if(ToEditHostel != null) 
                 {
-                    Console.Write("Please Enter The Name Of Hostel :");
+                    Console.Write("Please Enter The New Name Of Hostel :");
                     string editedname = Console.ReadLine();
-                    Console.Write("Please Enter The Address Of Hostel :");
+                    Console.Write("Please Enter The New Address Of Hostel :");
                     string address = Console.ReadLine();
-                    Console.Write("Please Enter The Capacity Of Hostel :");
+                    Console.Write("Please Enter The New Capacity Of Hostel :");
                     int capacity = 0;
                     try
                     {
