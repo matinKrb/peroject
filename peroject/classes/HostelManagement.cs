@@ -10,6 +10,7 @@ namespace classes
 {
     public static class HostelManagement
     {
+        public static bool hostelmanagerMainMenu = true;
         public static void DisplayHostelManagmentMenu()
         {
             Console.Clear();
@@ -32,6 +33,15 @@ namespace classes
             {
                 Console.WriteLine(ex.Message);
                 Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                hostelmanagerMainMenu = true;
+
+                while (hostelmanagerMainMenu)
+                {
+
+                    Program.MainMenu(ref hostelmanagerMainMenu);
+
+                }
             }
 
             switch(HostelManagmentOption)
@@ -62,7 +72,26 @@ namespace classes
             Console.Write("Please Enter The Hostel Address :");
             string HostelAddress = Console.ReadLine();
             Console.Write("Please Enter The Hostel Capacity :");
-            int HostelCapacity = int.Parse(Console.ReadLine());
+            int HostelCapacity = 0;
+            try 
+            {
+                HostelCapacity = int.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message + "\n");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                hostelmanagerMainMenu = true;
+
+                while (hostelmanagerMainMenu)
+                {
+
+                    Program.MainMenu(ref hostelmanagerMainMenu);
+
+                }
+
+            }
 
             if (Lists.HostelManagerList.Count>0)
             {
@@ -131,6 +160,8 @@ namespace classes
             Console.ReadKey();
         }
 
+        
+
         public static void EditHostel()
         {
             Console.Clear();
@@ -150,29 +181,74 @@ namespace classes
 
                 Hostel ToEditHostel = Hostel.FindHostelByName(name);
 
-                Console.Write("Please Enter The Name Of Hostel :");
-                string editedname = Console.ReadLine();
-                Console.Write("Please Enter The Address Of Hostel :");
-                string address = Console.ReadLine();
-                Console.Write("Please Enter The Capacity Of Hostel :");
-                int capacity = int.Parse(Console.ReadLine());
-                Console.Write("Please Enter The National Code Of Hostel Manager Who You Want to Replace With Older One :");
-
-                long NewNationalCode = Convert.ToInt64(Console.ReadLine());
-
-                HostelManager NewHostelManager = HostelManager.FindHostelManagerByNationalCode(NewNationalCode);
-
-
-                ToEditHostel.Name = name;
-                ToEditHostel.Address = address;
-                ToEditHostel.Capacity = capacity;
-                ToEditHostel.ManagerName = NewHostelManager;
-
-                Console.WriteLine('\n');
-                if (NewHostelManager != null)
+                if(ToEditHostel != null) 
                 {
-                    Console.WriteLine("Hostel Edited Successfuly");
+                    Console.Write("Please Enter The Name Of Hostel :");
+                    string editedname = Console.ReadLine();
+                    Console.Write("Please Enter The Address Of Hostel :");
+                    string address = Console.ReadLine();
+                    Console.Write("Please Enter The Capacity Of Hostel :");
+                    int capacity = 0;
+                    try
+                    {
+                        capacity = int.Parse(Console.ReadLine());
+                    }
+                    catch(Exception ex)
+                    {
+                        
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine("Press Any Button");
+                        Console.ReadKey();
+
+                        hostelmanagerMainMenu = true;
+                        
+                        while (hostelmanagerMainMenu)
+                        {
+
+                            Program.MainMenu(ref hostelmanagerMainMenu);
+
+                        }
+                    }
+                    Console.Write("Please Enter The National Code Of Hostel Manager Who You Want to Replace With Older One :");
+
+                    long NewNationalCode = 0;
+
+                    try
+                    {
+                        NewNationalCode = Convert.ToInt64(Console.ReadLine());
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine("Press Any Button");
+                        Console.ReadKey();
+                        hostelmanagerMainMenu = true;
+
+                        while (hostelmanagerMainMenu)
+                        {
+
+                            Program.MainMenu(ref hostelmanagerMainMenu);
+
+                        }
+                        
+                    }
+
+
+                    HostelManager NewHostelManager = HostelManager.FindHostelManagerByNationalCode(NewNationalCode);
+
+
+                    ToEditHostel.Name = name;
+                    ToEditHostel.Address = address;
+                    ToEditHostel.Capacity = capacity;
+                    ToEditHostel.ManagerName = NewHostelManager;
+
+                    Console.WriteLine('\n');
+                    if (NewHostelManager != null)
+                    {
+                        Console.WriteLine("Hostel Edited Successfuly");
+                    }
                 }
+                
             }
             else
             {

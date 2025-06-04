@@ -18,6 +18,8 @@ namespace classes
 
         public static List<HostelManager> HostelManagerList = new List<HostelManager>();
 
+        public static List<Student> StudentList = new List<Student>();  
+
     }
 }
         

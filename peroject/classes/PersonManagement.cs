@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-     public class PersonManagement
+    public class PersonManagement
     {
         public static void DisplayPersonManagemantMenu()
         {
@@ -16,9 +16,15 @@ namespace classes
             Console.WriteLine("3 : Manage Students");
 
             Console.Write("Please Enter The Option Number : ");
-            int PersonManagementOption = int.Parse(Console.ReadLine());
+            int PersonManagementOption = 0;
 
-            switch(PersonManagementOption)
+            try
+            {
+                PersonManagementOption = int.Parse(Console.ReadLine());
+            }
+            catch (Exception ex) { Console.WriteLine(ex.Message); }
+
+            switch (PersonManagementOption)
             {
                 case 1:
                     HostelManagerManagment.DisplayHostelManagerMenu();
@@ -28,6 +34,8 @@ namespace classes
                     break;
 
                 case 3:
+                    StudentManagement.DisplayStudentManagmentMenu();
+
                     break;
             }
         }

@@ -8,6 +8,7 @@ namespace classes
 {
     public class HostelManagerManagment
     {
+        static bool hostelmanagermanagmentMainmenu = true;
 
         public static void DisplayHostelManagerMenu()
         {
@@ -18,7 +19,26 @@ namespace classes
             Console.WriteLine("4 : Display Hostels Manager List");
 
             Console.Write("Please Enter The Option Number : ");
-            int HostelManagerManagementOption = int.Parse(Console.ReadLine());
+            int HostelManagerManagementOption = 0;
+
+            try
+            {
+                HostelManagerManagementOption = int.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                hostelmanagermanagmentMainmenu = true;
+
+                while (hostelmanagermanagmentMainmenu)
+                {
+
+                    Program.MainMenu(ref hostelmanagermanagmentMainmenu);
+
+                }
+            }
 
             switch (HostelManagerManagementOption)
             {
@@ -49,7 +69,27 @@ namespace classes
             Console.Write("Please Enter The Position Of Hostel Manager :");
             string position = Console.ReadLine();
             Console.Write("Please Enter The National Code Of Hostel Manager :");
-            long nationalcode = Convert.ToInt64(Console.ReadLine());
+            long nationalcode = 0;
+
+            try
+            {
+                nationalcode = Convert.ToInt64(Console.ReadLine());
+            }
+            catch (Exception ex) 
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                hostelmanagermanagmentMainmenu = true;
+
+                while (hostelmanagermanagmentMainmenu)
+                {
+
+                    Program.MainMenu(ref hostelmanagermanagmentMainmenu);
+
+                }
+            }
+
             Console.Write("Please Enter The Phone Number Of Hostel Manager :");
             string phonenumber = Console.ReadLine();
             Console.Write("Please Enter The Address Of Hostel Manager :");
@@ -79,7 +119,26 @@ namespace classes
                 Console.WriteLine('\n');
 
                 Console.Write("Please Enter The NationalCode Wich You Wanna Delete :");
-                long nationalcode = Convert.ToInt64(Console.ReadLine());
+                long nationalcode = 0;
+
+                try
+                {
+                    nationalcode = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    hostelmanagermanagmentMainmenu = true;
+
+                    while (hostelmanagermanagmentMainmenu)
+                    {
+
+                        Program.MainMenu(ref hostelmanagermanagmentMainmenu);
+
+                    }
+                }
                 HostelManager HostelManagerToRemove = HostelManager.FindHostelManagerByNationalCode(nationalcode);
                 Lists.HostelManagerList.Remove(HostelManagerToRemove);
                 Console.WriteLine('\n');
@@ -113,7 +172,26 @@ namespace classes
                 Console.WriteLine('\n');
 
                 Console.Write("Please Enter The NationalCode Of Hostel Manager Wich You Wanna Edit :");
-                long nationalcode = Convert.ToInt64(Console.ReadLine());
+                long nationalcode = 0;
+
+                try
+                {
+                    nationalcode = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    hostelmanagermanagmentMainmenu = true;
+
+                    while (hostelmanagermanagmentMainmenu)
+                    {
+
+                        Program.MainMenu(ref hostelmanagermanagmentMainmenu);
+
+                    }
+                }
 
                 HostelManager ToEditHostelManager = HostelManager.FindHostelManagerByNationalCode(nationalcode);
 
@@ -127,7 +205,26 @@ namespace classes
                     Console.Write("Please Enter The Position Of Hostel Manager :");
                     string position = Console.ReadLine();
                     Console.Write("Please Enter The National Code Of Hostel Manager :");
-                    long editednationalcode = Convert.ToInt64(Console.ReadLine());
+                    long editednationalcode = 0;
+
+                    try
+                    {
+                        editednationalcode = Convert.ToInt64(Console.ReadLine());
+                    }
+                    catch (Exception ex)
+                    {
+                        Console.WriteLine(ex.Message);
+                        Console.WriteLine("Press Any Button");
+                        Console.ReadKey();
+                        hostelmanagermanagmentMainmenu = true;
+
+                        while (hostelmanagermanagmentMainmenu)
+                        {
+
+                            Program.MainMenu(ref hostelmanagermanagmentMainmenu);
+
+                        }
+                    }
                     Console.Write("Please Enter The Phone Number Of Hostel Manager :");
                     string phonenumber = Console.ReadLine();
                     Console.Write("Please Enter The Address Of Hostel Manager :");

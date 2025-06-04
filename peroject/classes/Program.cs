@@ -15,11 +15,18 @@ namespace classes
         static void Main(string[] args)
         {
 
-            bool testmainmenu = true;
 
             Console.WriteLine("Welcome To Hostel Managing Application ");
             Console.WriteLine("_______________________________________");
             Console.WriteLine('\n');
+
+            LoginPage();
+
+        }
+        public static void LoginPage() 
+        {
+            bool testmainmenu = true;
+
 
             while (true)
             {
@@ -34,7 +41,7 @@ namespace classes
                 {
                     LoginOption = int.Parse(Console.ReadLine());
                 }
-                catch(Exception ex)
+                catch (Exception ex)
                 {
                     Console.WriteLine('\n');
                     Console.WriteLine(ex.Message);
@@ -83,11 +90,11 @@ namespace classes
                         string Family = Console.ReadLine();
                         Console.Write("please Enter Your National Code :");
                         long nationalcode = 0;
-                        try 
+                        try
                         {
                             nationalcode = Convert.ToInt64(Console.ReadLine());
                         }
-                        catch(Exception ex)
+                        catch (Exception ex)
                         {
                             Console.WriteLine(ex.Message);
                         }
@@ -207,7 +214,7 @@ namespace classes
                     break;
 
                 case 6:
-                    testmainmenu = false;
+                    LoginPage();
                     break;
 
             }
