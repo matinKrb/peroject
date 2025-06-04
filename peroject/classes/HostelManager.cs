@@ -18,24 +18,24 @@ namespace classes
             MnHostel = mnHostel;
         }
 
-        public HostelManager(string position,string name, string family, string phoneNumber, long nationalCode, string addres) : base(name, family, nationalCode, phoneNumber, addres)
+        public HostelManager(string position, string name, string family, string phoneNumber, long nationalCode, string addres) : base(name, family, nationalCode, phoneNumber, addres)
         {
             Position = position;
         }
 
         public static HostelManager FindHostelManagerByFamily(string family)
         {
-            HostelManager result=null;
+            HostelManager result = null;
             for (int i = 0; i < Lists.HostelManagerList.Count; i++)
             {
-                if (Lists.HostelManagerList[i].Family==family)
+                if (Lists.HostelManagerList[i].Family == family)
                 {
-                     result=Lists.HostelManagerList[i];
+                    result = Lists.HostelManagerList[i];
                 }
-                else
-                {
-                    Console.WriteLine("Hostel Manager Not Found");
-                }
+            }
+            if (result == null)
+            {
+                Console.WriteLine("Hostel Manager Not Found");
             }
             return result;
         }
@@ -49,10 +49,10 @@ namespace classes
                 {
                     result = Lists.HostelManagerList[i];
                 }
-                else
-                {
-                    Console.WriteLine("Hostel Manager Not Found");
-                }
+            }
+            if (result == null)
+            {
+                Console.WriteLine("Hostel Manager Not Found");
             }
             return result;
         }

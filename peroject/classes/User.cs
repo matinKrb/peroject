@@ -8,6 +8,7 @@ namespace classes
 {
     public class user
     {
+
         public string _Username;
         public int _Password;
 

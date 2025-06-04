@@ -12,10 +12,10 @@ namespace classes
         public string Address { get; set; }
 
         private int _Capacity;
-        public int Capacity 
+        public int Capacity
         {
             get { return _Capacity; }
-            set 
+            set
             {
                 if (value >= 0)
                 {
@@ -39,10 +39,11 @@ namespace classes
                 {
                     result = Lists.HostelList[i];
                 }
-                else
-                {
-                    Console.WriteLine("Hostel Not Found");
-                }
+
+            }
+            if(result==null)
+            {
+                Console.WriteLine("Hostel Not Found");
             }
             return result;
         }

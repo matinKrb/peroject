@@ -68,20 +68,31 @@ namespace classes
         {
             Console.Clear();
 
-            Console.WriteLine("List Of Hostel Managers With National Code:");
-            for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+            if (Lists.HostelManagerList.Count>0)
             {
-                Console.WriteLine($"{i + 1} : {Lists.HostelManagerList[i].Family} {Lists.HostelManagerList[i].NationalCode}");
+                Console.WriteLine("List Of Hostel Managers With National Code:");
+                for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1} : {Lists.HostelManagerList[i].Family} {Lists.HostelManagerList[i].NationalCode}");
 
+                }
+                Console.WriteLine('\n');
+
+                Console.Write("Please Enter The NationalCode Wich You Wanna Delete :");
+                long nationalcode = Convert.ToInt64(Console.ReadLine());
+                HostelManager HostelManagerToRemove = HostelManager.FindHostelManagerByNationalCode(nationalcode);
+                Lists.HostelManagerList.Remove(HostelManagerToRemove);
+                Console.WriteLine('\n');
+                if (HostelManagerToRemove != null)
+                {
+                    Console.WriteLine("Hostel Manager Removed Successfuly");
+                }
             }
-            Console.WriteLine('\n');
+            else
+            {
+                Console.WriteLine("List Of Hostel Managers Is Empty!");
+            }
 
-            Console.Write("Please Enter The NationalCode Wich You Wanna Delete :");
-            long nationalcode = Convert.ToInt64(Console.ReadLine());
-
-            Lists.HostelManagerList.Remove(HostelManager.FindHostelManagerByNationalCode(nationalcode));
-            Console.WriteLine('\n');
-            Console.WriteLine("Hostel Manager Removed Successfuly");
             Console.WriteLine("Press Any Button");
             Console.ReadKey();
 
@@ -90,42 +101,54 @@ namespace classes
         public static void EditHostelManager()
         {
             Console.Clear();
-
-            Console.WriteLine("List Of Hostel Managers With National Code:");
-            for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+            if (Lists.HostelManagerList.Count>0)
             {
-                Console.WriteLine($"{i + 1} : {Lists.HostelManagerList[i].Family} {Lists.HostelManagerList[i].NationalCode}");
+                Console.WriteLine("List Of Hostel Managers With National Code:");
+                for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1} : {Lists.HostelManagerList[i].Family} {Lists.HostelManagerList[i].NationalCode}");
 
+                }
+
+                Console.WriteLine('\n');
+
+                Console.Write("Please Enter The NationalCode Of Hostel Manager Wich You Wanna Edit :");
+                long nationalcode = Convert.ToInt64(Console.ReadLine());
+
+                HostelManager ToEditHostelManager = HostelManager.FindHostelManagerByNationalCode(nationalcode);
+
+
+                if (ToEditHostelManager != null)
+                {
+                    Console.Write("Please Enter The Name Of Hostel Manager :");
+                    string name = Console.ReadLine();
+                    Console.Write("Please Enter The Family Of Hostel Manager :");
+                    string family = Console.ReadLine();
+                    Console.Write("Please Enter The Position Of Hostel Manager :");
+                    string position = Console.ReadLine();
+                    Console.Write("Please Enter The National Code Of Hostel Manager :");
+                    long editednationalcode = Convert.ToInt64(Console.ReadLine());
+                    Console.Write("Please Enter The Phone Number Of Hostel Manager :");
+                    string phonenumber = Console.ReadLine();
+                    Console.Write("Please Enter The Address Of Hostel Manager :");
+                    string address = Console.ReadLine();
+
+                    ToEditHostelManager.Name = name;
+                    ToEditHostelManager.Family = family;
+                    ToEditHostelManager.Position = position;
+                    ToEditHostelManager.NationalCode = editednationalcode;
+                    ToEditHostelManager.PhoneNumber = phonenumber;
+                    ToEditHostelManager.Addres = address;
+                    Console.WriteLine('\n');
+                    Console.WriteLine("Hostel Manager Edited Successfuly");
+                }
+            }
+            else
+            {
+                Console.WriteLine("List Of Hostel Managers Is Empty!");
             }
 
-            Console.WriteLine('\n');
 
-            Console.Write("Please Enter The NationalCode Of Hostel Manager Wich You Wanna Edit :");
-            long nationalcode = Convert.ToInt64(Console.ReadLine());
-
-            HostelManager ToEditHostelManager = HostelManager.FindHostelManagerByNationalCode(nationalcode);
-
-            Console.Write("Please Enter The Name Of Hostel Manager :");
-            string name = Console.ReadLine();
-            Console.Write("Please Enter The Family Of Hostel Manager :");
-            string family = Console.ReadLine();
-            Console.Write("Please Enter The Position Of Hostel Manager :");
-            string position = Console.ReadLine();
-            Console.Write("Please Enter The National Code Of Hostel Manager :");
-            long editednationalcode = Convert.ToInt64(Console.ReadLine());
-            Console.Write("Please Enter The Phone Number Of Hostel Manager :");
-            string phonenumber = Console.ReadLine();
-            Console.Write("Please Enter The Address Of Hostel Manager :");
-            string address = Console.ReadLine();
-
-            ToEditHostelManager.Name = name;
-            ToEditHostelManager.Family = family;
-            ToEditHostelManager.Position = position;
-            ToEditHostelManager.NationalCode = editednationalcode;
-            ToEditHostelManager.PhoneNumber = phonenumber;
-            ToEditHostelManager.Addres = address;
-            Console.WriteLine('\n');
-            Console.WriteLine("Hostel Manager Edited Successfuly");
             Console.WriteLine("Press Any Button");
             Console.ReadKey();
         }
@@ -134,14 +157,21 @@ namespace classes
         {
             Console.Clear();
 
-            Console.WriteLine("List Of Hostel Managers:");
-            for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+            if (Lists.HostelManagerList.Count>0)
             {
-                Console.WriteLine($"{i + 1} : {Lists.HostelManagerList[i].Name} {Lists.HostelManagerList[i].Family} {Lists.HostelManagerList[i].NationalCode} {Lists.HostelManagerList[i].Position} {Lists.HostelManagerList[i].PhoneNumber} {Lists.HostelManagerList[i].Addres}");
-                Console.WriteLine('\n');
+                Console.WriteLine("List Of Hostel Managers:");
+                for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+                {
+                    Console.WriteLine($"{i + 1} :Name: {Lists.HostelManagerList[i].Name} Family: {Lists.HostelManagerList[i].Family} National Code: {Lists.HostelManagerList[i].NationalCode} Position: {Lists.HostelManagerList[i].Position} Phone Number: {Lists.HostelManagerList[i].PhoneNumber} Address: {Lists.HostelManagerList[i].Addres}");
+                    Console.WriteLine('\n');
+                }
             }
-            
-            
+            else
+            {
+                Console.WriteLine("List Of Hostel Managers Is Empty!");
+            }
+
+
             Console.WriteLine("Press Any Button");
             Console.ReadKey();
         }

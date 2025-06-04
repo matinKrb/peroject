@@ -11,9 +11,10 @@ namespace classes
 
     class Program
     {
-
+       
         static void Main(string[] args)
         {
+
             bool testmainmenu = true;
 
             Console.WriteLine("Welcome To Hostel Managing Application ");
@@ -28,8 +29,17 @@ namespace classes
 
                 Console.Write("Please Enter The Number Of Your Choice: ");
 
-                var LoginOption = int.Parse(Console.ReadLine());
-
+                var LoginOption = 0;
+                try
+                {
+                    LoginOption = int.Parse(Console.ReadLine());
+                }
+                catch(Exception ex)
+                {
+                    Console.WriteLine('\n');
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine('\n');
+                }
                 switch (LoginOption)
                 {
                     case 1:
@@ -69,10 +79,18 @@ namespace classes
                     case 2:
                         Console.Write("please Enter Your Name :");
                         string Name = Console.ReadLine();
-                        Console.Write("please Enter Your FamilyName :");
+                        Console.Write("please Enter Your Family :");
                         string Family = Console.ReadLine();
                         Console.Write("please Enter Your National Code :");
-                        long nationalcode = Convert.ToInt64(Console.ReadLine());
+                        long nationalcode = 0;
+                        try 
+                        {
+                            nationalcode = Convert.ToInt64(Console.ReadLine());
+                        }
+                        catch(Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
                         Console.Write("please Enter Your PhoneNumber :");
                         string phonenumber = Console.ReadLine();
                         Console.Write("please Enter Your Address :");
@@ -80,7 +98,17 @@ namespace classes
                         Console.Write("Please Enter Your UserName :");
                         string username = Console.ReadLine();
                         Console.Write("please Enter Your Password :");
-                        int password = int.Parse(Console.ReadLine());
+                        int password = 0;
+
+                        try
+                        {
+                            password = int.Parse(Console.ReadLine());
+                        }
+                        catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                        }
+
                         Person NewPerson = new Person(Name, Family, nationalcode, phonenumber, address);
                         user NewUser = new user(username, password);
                         Lists.PersonList.Add(NewPerson);
@@ -111,7 +139,7 @@ namespace classes
                                 while (testmainmenu)
                                 {
                                     MainMenu(ref testmainmenu);
-
+                                    Console.ReadKey();
 
                                 }
                             }
@@ -146,7 +174,16 @@ namespace classes
             Console.WriteLine("6 : Exit ");
             Console.Write("Please Enter The Option Number : ");
 
-            int menuoption = int.Parse(Console.ReadLine());
+            int menuoption = 0;
+
+            try 
+            {
+                menuoption = int.Parse(Console.ReadLine());
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
 
             switch (menuoption)
             {
