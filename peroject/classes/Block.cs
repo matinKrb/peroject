@@ -9,7 +9,9 @@ namespace classes
     public class Block
     {
         public string BlockName { get; set; }
-        public int BlockFloors
+
+        private int BlockFloors;
+        public int blockFloors
         {
             get { return BlockFloors; }
             set
@@ -24,7 +26,8 @@ namespace classes
                 }
             }
         }
-        public int BlockRoom
+        private int BlockRoom;
+        public int blockRoom
         {
             get { return BlockRoom; }
             set
@@ -53,6 +56,32 @@ namespace classes
             MgBlock = mgBlock;
             BlockRooms = blockRooms;
             HostelBlock = hostelBlock;
+        }
+        public Block(string blockName, int blockFloors, int blockRoom, BlockManager mgBlock, Hostel hostelBlock)
+        {
+            BlockName = blockName;
+            BlockFloors = blockFloors;
+            BlockRoom = blockRoom;
+            MgBlock = mgBlock;
+            HostelBlock = hostelBlock;
+        }
+
+        public static Block FindBlockByName(string name)
+        {
+            Block result = null;
+            for (int i = 0; i < Hostel.BlockList.Count; i++)
+            {
+                if (Lists.HostelList[i].Name == name)
+                {
+                    result = Hostel.BlockList[i];
+                }
+
+            }
+            if (result == null)
+            {
+                Console.WriteLine("Block Not Found");
+            }
+            return result;
         }
     }
 }

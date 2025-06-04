@@ -93,6 +93,28 @@ namespace classes
 
                 }
             }
+
+            Student StudentToBeManager = Student.FindStudentByStudentId(StudentIdToBeManager);
+
+
+            
+
+            if (StudentToBeManager != null)
+            {
+                
+                string Name = StudentToBeManager.Name;
+                string Family = StudentToBeManager.Family;
+                long StudentId = StudentToBeManager.StudentId;
+                string PhoneNumber = StudentToBeManager.PhoneNumber;
+                long NationalCode = StudentToBeManager.NationalCode;
+                string Addres = StudentToBeManager.Addres;
+
+                BlockManager NewBlockManager = new BlockManager(StudentId , Name , Family , PhoneNumber , NationalCode , Addres);
+
+
+               Lists.blockManagersList.Add(NewBlockManager);
+                
+            }
             
         }
     }

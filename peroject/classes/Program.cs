@@ -201,7 +201,7 @@ namespace classes
 
                 case 2:
                     Console.Clear();
-                    
+                    BlockManagment.BlockManagmentMenu();
                     break;
 
                 case 3:

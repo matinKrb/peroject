@@ -27,8 +27,8 @@ namespace classes
                 }
             }
         }
-        public HostelManager ManagerName { get; set; }
-        public List<Block> Blocks { get; set; }
+         public HostelManager ManagerName { get; set; }
+        public static List<Block> BlockList { get; set; }
 
         public static Hostel FindHostelByName(string name)
         {
@@ -55,7 +55,7 @@ namespace classes
             Address = address;
             Capacity = capacity;
             ManagerName = managerName;
-            Blocks = blocks;
+            BlockList = blocks;
         }
         public Hostel(string name, string address, int capacity, HostelManager managerName)
         {
