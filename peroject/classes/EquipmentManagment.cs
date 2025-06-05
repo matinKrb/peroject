@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace classes
 {
+    
 
     public class EquipmentManagment
     {
@@ -65,57 +66,78 @@ namespace classes
 
 
         }
+
+        public static int EquipmentsCount;
         public static void AddEquipmentMenu()
         {
             Console.Clear();
-            Console.WriteLine("1: Add New Equipment With All Info");
-            Console.WriteLine("2: Allocation Equipment Uniq Number And Part Number ");
+            Console.Write("Please Enter The Equipment Type :");
+            string Type = Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Ok! Now You Should Enter A part Number Based On Equipment Type :");
+            Console.WriteLine();
+            Console.WriteLine("Pay Attention !");
+            Console.WriteLine("001: Refrigerator");
+            Console.WriteLine("002: Table");
+            Console.WriteLine("003: Chair");
+            Console.WriteLine("004: Bed");
+            Console.WriteLine("005: Closet");
+            Console.WriteLine();
+            Console.Write("Part Number:");
+
+            string PartNumber = Console.ReadLine();
+           
+            long HelpPropNum = 10000 +EquipmentsCount ;
+
+            string PropNum = $"{HelpPropNum}{PartNumber}";
+            
+
+            Equipment NewEquipment = new Equipment(Type , PartNumber , PropNum);
+            EquipmentsCount++;
+            Lists.EquipmentsList.Add(NewEquipment);
+            Console.WriteLine("Equipment Added Successfuly");
             Console.WriteLine('\n');
-            Console.Write("Please Enter Number Of Option :");
-            int EquipmenAddtNumberOption = 0;
 
-            try
+
+            Console.WriteLine("List:");
+            Console.WriteLine("\n");
+            for (int j = 0; j < Lists.EquipmentsList.Count; j++)
             {
-                EquipmenAddtNumberOption = Convert.ToInt32(Console.ReadLine());
+                Console.WriteLine($"{j+1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
             }
-            catch (Exception ex)
+
+            Console.WriteLine("Press Any Button ");
+            Console.ReadKey();           
+        }
+
+        public static Equipment FindEquipmentByPropNum(string propnum) 
+        {
+            Equipment Result = null;
+            for (int i = 0; i < Lists.EquipmentsList.Count; i++)
             {
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("Press Any Button");
-                Console.ReadKey();
-                Equipmentmanagment = true;
-
-                while (Equipmentmanagment)
+                if (Lists.EquipmentsList[i].PropNum == propnum)
                 {
+                     Result = Lists.EquipmentsList[i];
+                }
+                else
+                {
+                    Console.WriteLine("Equipment Not Found!");
+                    Console.WriteLine("Press Any Button ");
+                    Console.ReadKey();
 
-                    Program.MainMenu(ref Equipmentmanagment);
+                    Equipmentmanagment = true;
 
+                    while (Equipmentmanagment)
+                    {
+
+                        Program.MainMenu(ref Equipmentmanagment);
+
+                    }
                 }
             }
-            switch (EquipmenAddtNumberOption)
-            {
-                case 1:
-                    AddNewEquipmentWithAllInfo();
-                    break;
+            return Result;
+        } 
 
-                case 2:
-                    AllocationEquipmentUniqNumberAndPartNumber();
-                    break;
-            }
-
-        }
-        public static void AddNewEquipmentWithAllInfo()
-        {
-            Console.Clear();
-            Console.WriteLine("Please Enter Type Of Equipment :");
-            Console.WriteLine("Please Enter Part Number :");
-            Console.WriteLine("Please Enter Equipment Number :");
-        }
-        public static void AllocationEquipmentUniqNumberAndPartNumber()
-        {
-            Console.Clear();
-
-        }
 
 
 
@@ -172,20 +194,19 @@ namespace classes
 
 
 
-
+//****************************************************************************************
 
         public static void AllocatingEquipmentToStudentMenu()
         {
             Console.Clear();
-            Console.WriteLine("1: Choose Desired Student");
-            Console.WriteLine("2: Allocating Personal Equipment To Student");
-            Console.WriteLine('\n');
-            Console.Write("Please Enter Number Of Option :");
-            int EquipmenAllocatingStudentNumberOption = 0;
+
+            Console.WriteLine("Please Enter The Student Id Of Student Who You Wanna Manage His Equipments:");
+
+            long StudentIdToFind = 0;
 
             try
             {
-                EquipmenAllocatingStudentNumberOption = Convert.ToInt32(Console.ReadLine());
+                StudentIdToFind = Convert.ToInt64(Console.ReadLine());
             }
             catch (Exception ex)
             {
@@ -201,27 +222,42 @@ namespace classes
 
                 }
             }
-            switch (EquipmenAllocatingStudentNumberOption)
+
+            Student OwnerStudent = Student.FindStudentByStudentId(StudentIdToFind);
+
+            Console.WriteLine("Now You Should Chosse Equipments From The List Below ");
+            Console.WriteLine('\n');
+            for (int j = 0; j < Lists.EquipmentsList.Count; j++)
             {
-                case 1:
-                    ChooseDesiredStudent();
-
-                    break;
-
-                case 2:
-                    AllocatingPersonalEquipmentToStudent();
-
-                    break;
+                Console.WriteLine($"{j + 1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
             }
+
+            Console.WriteLine('\n');
+
+            Console.WriteLine("Enter The Choosen Refrigerator(PropNum):");
+            string RefrigeratorPropNum = Console.ReadLine();
+
+            Console.WriteLine("Enter The Choosen Table(PropNum):");
+            string TablePropNum = Console.ReadLine();
+
+            Console.WriteLine("Enter The Choosen Chair(PropNum):");
+            string ChairPropNum = Console.ReadLine();
+
+            Console.WriteLine("Enter The Choosen Bed(PropNum):");
+            string BedPropNum = Console.ReadLine();
+
+            Console.WriteLine("Enter The Choosen Closet(PropNum):");
+            string ClosetPropNum = Console.ReadLine();
+
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(RefrigeratorPropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(TablePropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(ChairPropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(BedPropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(ClosetPropNum));
+            Console.WriteLine('\n');
+            Console.WriteLine($"Equipments Successfuly Allocated To {OwnerStudent.Name} {OwnerStudent.Family}");
         }
-        public static void ChooseDesiredStudent()
-        {
-            Console.Clear();
-        }
-        public static void AllocatingPersonalEquipmentToStudent()
-        {
-            Console.Clear();
-        }
+        
 
 
 

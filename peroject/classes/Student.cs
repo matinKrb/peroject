@@ -27,7 +27,7 @@ namespace classes
         public Room StRoom { get; set; }
         public Block StBlock { get; set; }
         public Hostel StHostel { get; set; }
-        public List<Equipment> StEquipment { get; set; }
+        public List<Equipment> StEquipment { get; set; } = new List<Equipment>();
 
         public Student( long studentId , string name , string family , string phoneNumber , long nationalCode , string address) : base( name , family , nationalCode , phoneNumber , address)
         {
@@ -62,12 +62,12 @@ namespace classes
             }
             return result;
         }
-        public static Student FindStudentByStudentId(long Studenid)
+        public static Student FindStudentByStudentId(long Studentid)
         {
             Student result = null;
             for (int i = 0; i < Lists.StudentList.Count; i++)
             {
-                if (Lists.StudentList[i].StudentId == Studenid)
+                if (Lists.StudentList[i].StudentId == Studentid)
                 {
                     result = Lists.StudentList[i];
                 }

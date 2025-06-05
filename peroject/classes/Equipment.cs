@@ -10,36 +10,10 @@ namespace classes
     {
         public string EqType {  get; set; }
         
-        public int PartNumber
-        {
-            get { return PartNumber; }
-            set
-            {
-                if (value >= 001 && value <= 005)
-                {
-                    PartNumber = value;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Part Number!");
-                }
-            }
-        }
-        public long PropNum
-        {
-            get { return PropNum; }
-            set
-            {
-                if ( value >= 10000000 && value < 100000000)
-                {
-                    PropNum = value;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Property Number!");
-                }
-            }
-        }
+        public string PartNumber { get; set; }
+
+        public string PropNum { get; set; } 
+        
         public string Status
         {
             get { return Status; }
@@ -58,7 +32,7 @@ namespace classes
         public Room EqRoom{ get; set; }
         public Student EqOwner{ get; set; }
 
-        public Equipment(string eqType, int partNumber, long propNum, string status, Room eqRoom, Student eqOwner)
+        public Equipment(string eqType, string partNumber, String propNum, string status, Room eqRoom, Student eqOwner)
         {
             EqType = eqType;
             PartNumber = partNumber;
@@ -67,7 +41,7 @@ namespace classes
             EqRoom = eqRoom;
             EqOwner = eqOwner;
         }
-        public Equipment(string eqType, int partNumber, long propNum)
+        public Equipment(string eqType, string partNumber, string propNum)
         {
             EqType = eqType;
             PartNumber = partNumber;

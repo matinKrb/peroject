@@ -21,6 +21,9 @@ namespace classes
 
         public static List<BlockManager> blockManagersList = new List<BlockManager>();
 
+        public static List<Equipment> EquipmentsList = new List<Equipment>();
+
+
     }
 }
         

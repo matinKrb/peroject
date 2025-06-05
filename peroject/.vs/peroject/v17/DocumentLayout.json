@@ -7,20 +7,28 @@
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipmentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\youse\\desktop\\test\\consoleapp2\\peroject\\peroject\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\youse\\desktop\\test\\consoleapp2\\peroject\\peroject\\classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\studentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\studentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\youse\\desktop\\test\\consoleapp2\\peroject\\peroject\\classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\lists.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\block.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\blockmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -62,7 +70,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
@@ -72,10 +80,11 @@
               "RelativeDocumentMoniker": "classes\\Program.cs",
               "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Program.cs",
               "RelativeToolTip": "classes\\Program.cs",
-              "ViewState": "AgIAAL8AAAAAAAAAAAAgwNQAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAJ0AAAAAAAAAAAAMwNUAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T06:45:33.281Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -84,14 +93,41 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Student.cs",
+              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Student.cs",
+              "RelativeDocumentMoniker": "classes\\Student.cs",
+              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Student.cs",
+              "RelativeToolTip": "classes\\Student.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAwwB0AAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T10:17:37.405Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Lists.cs",
+              "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Lists.cs",
+              "RelativeDocumentMoniker": "classes\\Lists.cs",
+              "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Lists.cs",
+              "RelativeToolTip": "classes\\Lists.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-05T09:56:21.82Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Equipment.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Equipment.cs",
               "RelativeDocumentMoniker": "classes\\Equipment.cs",
               "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Equipment.cs",
               "RelativeToolTip": "classes\\Equipment.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAkwEkAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAA3wDAAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T07:17:41.651Z"
+              "WhenOpened": "2025-06-05T09:36:55.801Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -101,7 +137,7 @@
               "RelativeDocumentMoniker": "classes\\EquipmentManagment.cs",
               "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\EquipmentManagment.cs",
               "RelativeToolTip": "classes\\EquipmentManagment.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAowBQAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAN8AAAAAAAAAAAAwwPAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-05T06:48:51.417Z",
               "EditorCaption": ""
@@ -114,13 +150,14 @@
               "RelativeDocumentMoniker": "classes\\StudentManagment.cs",
               "ToolTip": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\StudentManagment.cs",
               "RelativeToolTip": "classes\\StudentManagment.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKsAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAFcBAAAAAAAAAAAkwKsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-05T05:54:10.759Z"
+              "WhenOpened": "2025-06-05T05:54:10.759Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
               "Title": "Block.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Block.cs",
               "RelativeDocumentMoniker": "classes\\Block.cs",
@@ -132,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "BlockManager.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\BlockManager.cs",
               "RelativeDocumentMoniker": "classes\\BlockManager.cs",
@@ -144,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "BlockManagerManagment.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\BlockManagerManagment.cs",
               "RelativeDocumentMoniker": "classes\\BlockManagerManagment.cs",
@@ -156,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "BlockManagment.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\BlockManagment.cs",
               "RelativeDocumentMoniker": "classes\\BlockManagment.cs",
@@ -168,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "Hostel.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\Hostel.cs",
               "RelativeDocumentMoniker": "classes\\Hostel.cs",
@@ -180,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "PersonManagement.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\PersonManagement.cs",
               "RelativeDocumentMoniker": "classes\\PersonManagement.cs",
@@ -192,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "HostelManagement.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\HostelManagement.cs",
               "RelativeDocumentMoniker": "classes\\HostelManagement.cs",
@@ -204,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "HostelManagerManagment.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\HostelManagerManagment.cs",
               "RelativeDocumentMoniker": "classes\\HostelManagerManagment.cs",
@@ -216,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "HostelManager.cs",
               "DocumentMoniker": "C:\\Users\\youse\\Desktop\\Test\\ConsoleApp2\\peroject\\peroject\\classes\\HostelManager.cs",
               "RelativeDocumentMoniker": "classes\\HostelManager.cs",
