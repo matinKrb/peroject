@@ -15,6 +15,7 @@ namespace classes
             Console.WriteLine("2 : Delete A Block Manager");
             Console.WriteLine("3 : Change Block Manager(Replacing)");
             Console.WriteLine("4 : Display Block Managers List");
+            Console.WriteLine("\n");
 
             Console.Write("Please Enter The Option Number : ");
             int BlockManagerManagementOption = 0;
@@ -60,61 +61,73 @@ namespace classes
         }
         public static void AddBlockManager() 
         {
-            Console.WriteLine("List Of Students With Family And Student Id  :");
+            Console.Clear();
             if (Lists.StudentList.Count>0)
             {
+                Console.WriteLine("List Of Students With Family And Student Id  :");
+                Console.WriteLine('\n');
+
                 for (int i = 0; i < Lists.StudentList.Count; i++)
                 {
                     Console.WriteLine($"{i + 1} : {Lists.StudentList[i].Family} , {Lists.StudentList[i].StudentId}");
+                }
+                Console.WriteLine("\n");
+                Console.Write("Please Enter Student Id Who You Want To Be Block Manager :");
+                long StudentIdToBeManager = 0;
+
+                try
+                {
+                    StudentIdToBeManager = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    BlockManagerManagmentMenu = true;
+
+                    while (BlockManagerManagmentMenu)
+                    {
+
+                        Program.MainMenu(ref BlockManagerManagmentMenu);
+
+                    }
+                }
+
+                Student StudentToBeManager = Student.FindStudentByStudentId(StudentIdToBeManager);
+
+                if (StudentToBeManager != null)
+                {
+
+                    string Name = StudentToBeManager.Name;
+                    string Family = StudentToBeManager.Family;
+                    long StudentId = StudentToBeManager.StudentId;
+                    string PhoneNumber = StudentToBeManager.PhoneNumber;
+                    long NationalCode = StudentToBeManager.NationalCode;
+                    string Addres = StudentToBeManager.Addres;
+
+                    BlockManager NewBlockManager = new BlockManager(StudentId, Name, Family, PhoneNumber, NationalCode, Addres);
+
+
+                    Lists.blockManagersList.Add(NewBlockManager);
+
+                    Console.WriteLine('\n');
+                    Console.WriteLine("Block Manager Added Successfuly");
+                    Console.WriteLine("Press Any Button !");
+                    Console.ReadKey();
+
+
                 }
             }
             else
             {
                 Console.WriteLine("List Of Students Is Empty!");
             }
-            Console.Write("Please Enter Student Id Who You Want To Be Block Manager :");
-            long StudentIdToBeManager = 0;
 
-            try
-            {
-                StudentIdToBeManager = Convert.ToInt64(Console.ReadLine());
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-                Console.WriteLine("Press Any Button");
-                Console.ReadKey();
-                BlockManagerManagmentMenu = true;
-
-                while (BlockManagerManagmentMenu)
-                {
-
-                    Program.MainMenu(ref BlockManagerManagmentMenu);
-
-                }
-            }
-
-            Student StudentToBeManager = Student.FindStudentByStudentId(StudentIdToBeManager);
 
 
             
 
-            if (StudentToBeManager != null)
-            {
-                
-                string Name = StudentToBeManager.Name;
-                string Family = StudentToBeManager.Family;
-                long StudentId = StudentToBeManager.StudentId;
-                string PhoneNumber = StudentToBeManager.PhoneNumber;
-                long NationalCode = StudentToBeManager.NationalCode;
-                string Addres = StudentToBeManager.Addres;
-
-                BlockManager NewBlockManager = new BlockManager(StudentId , Name , Family , PhoneNumber , NationalCode , Addres);
-
-
-               Lists.blockManagersList.Add(NewBlockManager);
-                
-            }
             
         }
 

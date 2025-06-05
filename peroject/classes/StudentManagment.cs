@@ -21,6 +21,7 @@ namespace classes
             Console.WriteLine(" 5 : Display All Information Of A Student  ");
             Console.WriteLine(" 6 : Student Registration In Hostel ");
             Console.WriteLine(" 7 : Transfer Student  ");
+            Console.WriteLine('\n');
 
             Console.Write("Please Enter The Option Number :");
 
@@ -168,6 +169,7 @@ namespace classes
             Student NewStudent = new Student(StudentId, name, family, phonenumber, nationalcode, address);
 
             Lists.StudentList.Add(NewStudent);
+            Console.WriteLine('\n');
             Console.WriteLine("Student Added Successfuly");
             Console.WriteLine("Press Any Button");
             Console.ReadKey();
@@ -348,7 +350,7 @@ namespace classes
             if (FindedStudent != null)
             {
                 Console.WriteLine($"Name Is :{FindedStudent.Name} , Family Is : {FindedStudent.Family} , Student ID Is : {FindedStudent.StudentId} , National Code Is : {FindedStudent.NationalCode} , Phone Number Is : {FindedStudent.PhoneNumber} , Address Is : {FindedStudent.Addres}");
-
+                Console.WriteLine("Press Any Button!");
             }
             
 

@@ -14,6 +14,7 @@ namespace classes
             Console.WriteLine("1 : Manage Hostels Manager");
             Console.WriteLine("2 : Manage Blocks Manager");
             Console.WriteLine("3 : Manage Students");
+            Console.WriteLine('\n');
 
             Console.Write("Please Enter The Option Number : ");
             int PersonManagementOption = 0;
