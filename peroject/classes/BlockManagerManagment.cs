@@ -13,7 +13,7 @@ namespace classes
             Console.Clear();
             Console.WriteLine("1 : Add A New Block Manager");
             Console.WriteLine("2 : Delete A Block Manager");
-            Console.WriteLine("3 : Edit A Block Manager Info");
+            Console.WriteLine("3 : Change Block Manager(Replacing)");
             Console.WriteLine("4 : Display Block Managers List");
 
             Console.Write("Please Enter The Option Number : ");
@@ -45,15 +45,15 @@ namespace classes
                     break;
 
                 case 2:
-                    
+                    RemoveBlockManager();
                     break;
 
                 case 3:
-                    
+                    ChangeBlockManager();
                     break;
 
                 case 4:
-                   
+                   DisplayBlockManagersList();
                     break;
             }
             
@@ -116,6 +116,72 @@ namespace classes
                 
             }
             
+        }
+
+        public static void RemoveBlockManager() 
+        {
+            Console.Clear();
+            Console.Write("Please Enter The Student Id Of Block Manager Who You Wanna Remove :");
+
+            long StudentIdToRmoveBlockManager = 0;
+
+            try
+            {
+                StudentIdToRmoveBlockManager = Convert.ToInt64(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                BlockManagerManagmentMenu = true;
+
+                while (BlockManagerManagmentMenu)
+                {
+
+                    Program.MainMenu(ref BlockManagerManagmentMenu);
+
+                }
+            }
+
+            BlockManager BlockManagerToRemove = BlockManager.FindBlockManagerByStudentId(StudentIdToRmoveBlockManager);
+
+            if (BlockManagerToRemove != null) 
+            {
+                Lists.blockManagersList.Remove(BlockManagerToRemove);
+                Console.WriteLine('\n');
+                Console.WriteLine("Block Manager Removed Successfuly!");
+            }
+            else
+            {
+                Console.WriteLine("\n");
+                Console.WriteLine("Press Any Key ");
+                Console.ReadKey();
+            }
+
+
+
+        }
+
+        public static void ChangeBlockManager() 
+        {
+            RemoveBlockManager();
+            Console.WriteLine('\n');
+            Console.WriteLine("Now You Have To Choose A Student Id To Be Block Manager ");
+            AddBlockManager();
+
+        }
+
+        public static void DisplayBlockManagersList() 
+        {
+            Console.WriteLine("Block Managers: ");
+            Console.WriteLine('\n');
+
+            for (int i  = 0; i  < Lists.blockManagersList.Count; i++)
+            {
+                Console.WriteLine($"{i+1}: Name: {Lists.blockManagersList[i].Name} , Family: {Lists.blockManagersList[i].Family}  , Phone Number : {Lists.blockManagersList[i].PhoneNumber} ,National Code : {Lists.blockManagersList[i].NationalCode} , Student Id: {Lists.blockManagersList[i].StudentId}");
+                Console.WriteLine();
+            }
         }
     }
 }
