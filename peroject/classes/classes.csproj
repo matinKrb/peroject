@@ -48,6 +48,7 @@
     <Compile Include="BlockManagerManagment.cs" />
     <Compile Include="BlockManagment.cs" />
     <Compile Include="Equipment.cs" />
+    <Compile Include="EquipmentManagment.cs" />
     <Compile Include="HostelManagement.cs" />
     <Compile Include="Hostel.cs" />
     <Compile Include="HostelManager.cs" />

@@ -210,6 +210,8 @@ namespace classes
                     break;
 
                 case 4:
+                    Console.Clear();
+                    EquipmentManagment.DisplayEquipmentManagment();
                     break;
 
                 case 5:
