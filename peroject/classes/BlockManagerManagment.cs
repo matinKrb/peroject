@@ -195,6 +195,9 @@ namespace classes
                 Console.WriteLine($"{i+1}: Name: {Lists.blockManagersList[i].Name} , Family: {Lists.blockManagersList[i].Family}  , Phone Number : {Lists.blockManagersList[i].PhoneNumber} ,National Code : {Lists.blockManagersList[i].NationalCode} , Student Id: {Lists.blockManagersList[i].StudentId}");
                 Console.WriteLine();
             }
+            Console.WriteLine("Press Any Button !");
+            Console.ReadKey();
+            
         }
     }
 }

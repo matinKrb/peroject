@@ -6,9 +6,12 @@ using System.Threading.Tasks;
 
 namespace classes
 {
+
+    
     public class Room
     {
-        public int RoomNum
+        private int RoomNum;
+        public int roomNum
         {
             get { return RoomNum; }
             set
@@ -24,8 +27,8 @@ namespace classes
             }
         }
 
-
-        public int RoomFloor
+        private int RoomFloor;
+        public int roomFloor
         {
             get { return RoomFloor; }
             set
@@ -40,7 +43,8 @@ namespace classes
                 }
             }
         }
-        public int Capacity
+        private int Capacity;
+        public int capacity
         {
             get { return Capacity; }
             set
@@ -67,6 +71,34 @@ namespace classes
             RoomEq = roomEq;
             RoomSt = roomSt;
             RoomBlock = roomBlock;
+        }
+
+        public Room(int roomNum, int roomFloor, int capacity, Block roomBlock)
+        {
+            this.roomNum = roomNum;
+            this.roomFloor = roomFloor;
+            this.capacity = capacity;
+            RoomBlock = roomBlock;
+        }
+
+        public static Room FindRoomByRoomNumber(int roomnumber,Block blocktomanageitsroom)
+        {
+            Room result = null;
+            for (int i = 0; i < blocktomanageitsroom.BlockRoomsList.Count; i++)
+            {
+                if (blocktomanageitsroom.BlockRoomsList[i].RoomNum == roomnumber)
+                {
+                    result = blocktomanageitsroom.BlockRoomsList[i];
+                }
+
+            }
+            if (result == null)
+            {
+                Console.WriteLine("Room Not Found");
+                Console.WriteLine("Press Any Button");
+
+            }
+            return result;
         }
     }
 }

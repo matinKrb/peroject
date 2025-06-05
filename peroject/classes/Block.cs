@@ -26,15 +26,15 @@ namespace classes
                 }
             }
         }
-        private int BlockRoom;
+        private int BlockRooms;
         public int blockRoom
         {
-            get { return BlockRoom; }
+            get { return BlockRooms; }
             set
             {
                 if (value > 0)
                 {
-                    BlockRoom = value;
+                    BlockRooms = value;
                 }
                 else
                 {
@@ -45,23 +45,23 @@ namespace classes
 
 
         public BlockManager MgBlock { get; set; }
-        public List<Room> BlockRooms { get; set; }
+        public List<Room> BlockRoomsList { get; set; } = new List<Room>();
         public Hostel HostelBlock { get; set; }
 
         public Block(string blockName, int blockFloors, int blockRoom, BlockManager mgBlock, List<Room> blockRooms, Hostel hostelBlock)
         {
             BlockName = blockName;
             BlockFloors = blockFloors;
-            BlockRoom = blockRoom;
+            BlockRooms = blockRoom;
             MgBlock = mgBlock;
-            BlockRooms = blockRooms;
+            BlockRoomsList = blockRooms;
             HostelBlock = hostelBlock;
         }
         public Block(string blockName, int blockFloors, int blockRoom, BlockManager mgBlock, Hostel hostelBlock)
         {
             BlockName = blockName;
             BlockFloors = blockFloors;
-            BlockRoom = blockRoom;
+            BlockRooms = blockRoom;
             MgBlock = mgBlock;
             HostelBlock = hostelBlock;
         }
@@ -71,7 +71,7 @@ namespace classes
             Block result = null;
             for (int i = 0; i < chossenhostel.BlockList.Count; i++)
             {
-                if (Lists.HostelList[i].Name == name)
+                if (chossenhostel.BlockList[i].BlockName == name)
                 {
                     result = chossenhostel.BlockList[i];
                 }
