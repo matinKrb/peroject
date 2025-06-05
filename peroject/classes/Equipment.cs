@@ -8,21 +8,8 @@ namespace classes
 {
     public class Equipment
     {
-        public string EqType
-        {
-            get { return EqType; }
-            set
-            {
-                if (value == "Refrigerator" && value == "Table" && value == "Chair" && value == "Bed" && value == "Closet")
-                {
-                    EqType = value;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid Equipment Type!");
-                }
-            }
-        }
+        public string EqType {  get; set; }
+        
         public int PartNumber
         {
             get { return PartNumber; }
@@ -80,5 +67,12 @@ namespace classes
             EqRoom = eqRoom;
             EqOwner = eqOwner;
         }
+        public Equipment(string eqType, int partNumber, long propNum)
+        {
+            EqType = eqType;
+            PartNumber = partNumber;
+            PropNum = propNum;
+        }
+
     }
 }
