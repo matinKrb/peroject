@@ -11,10 +11,10 @@ namespace classes
     {
         public static bool BlockManagmentMainMenu = true;
 
+       public static Hostel ChoosenHostel = null;
 
         public static void BlockManagmentMenu()
         {
-            Hostel ChoosenHostel = null;
             if (Lists.HostelList.Count>0)
             {
                 Console.WriteLine("List Of Hostels :");
@@ -24,8 +24,10 @@ namespace classes
                     Console.WriteLine($"{i + 1} : {Lists.HostelList[i].Name}");
 
                 }
+                Console.WriteLine('\n');
                 Console.Write("Please Enter The Name Of Hostel Wich You Want To Manage Its Blocks :");
                 string name = Console.ReadLine();
+                Console.WriteLine('\n');
 
                 ChoosenHostel = Hostel.FindHostelByName(name);
 
@@ -81,7 +83,7 @@ namespace classes
                         break;
 
                     case 2:
-                        RemoveBlock();
+                        RemoveBlock(ChoosenHostel);
                         break;
 
                     case 3:
@@ -105,9 +107,9 @@ namespace classes
         {
             Console.Clear();
 
-            Console.WriteLine("Please Enter The Block Name");
+            Console.Write("Please Enter The Block Name :");
             string name = Console.ReadLine();
-            Console.WriteLine("Please Enter Floors Count");
+            Console.Write("Please Enter Floors Count :");
             int FloorsCount = 0;
 
             try
@@ -128,7 +130,7 @@ namespace classes
 
                 }
             }
-            Console.WriteLine("Please Enter Rooms Count");
+            Console.Write("Please Enter Rooms Count :");
             int RoomsCount = 0;
 
             try
@@ -152,13 +154,15 @@ namespace classes
 
             if (Lists.blockManagersList.Count > 0)
             {
+                Console.WriteLine('\n');
                 Console.WriteLine("List Of Block Managers With Studet Id Is : ");
+                Console.WriteLine('\n');
 
                 for (int i = 0; i < Lists.blockManagersList.Count; i++)
                 {
                     Console.WriteLine($"{Lists.blockManagersList[i].Family} , {Lists.blockManagersList[i].StudentId}");
                 }
-
+                Console.WriteLine('\n');
                 Console.Write("Please Enter The Student Id Who You Want To Choose For Managing Block :");
 
                 long StudentId = 0;
@@ -183,7 +187,8 @@ namespace classes
 
                 Block NewBlock = new Block(name, FloorsCount, RoomsCount, BlockManagerToManage, choosenhostel);
 
-                Hostel.BlockList.Add(NewBlock);
+                choosenhostel.BlockList.Add(NewBlock);
+
                 Console.WriteLine("Block Added Successfuly");
                 Console.WriteLine("Press Any Button!");
                 Console.ReadKey();
@@ -195,25 +200,25 @@ namespace classes
                 Console.ReadKey();
             }
         }
-        public static void RemoveBlock() 
+        public static void RemoveBlock(Hostel choosenhostel) 
         {
             Console.Clear();
             Console.WriteLine("List Of Blocks Is :");
             Console.WriteLine("\n");
 
-            for (int i = 0; i < Hostel.BlockList.Count; i++)
+            for (int i = 0; i < choosenhostel.BlockList.Count; i++)
             {
-                Console.WriteLine($"{i+1} : {Hostel.BlockList[i].BlockName}");
+                Console.WriteLine($"{i+1} : { choosenhostel.BlockList[i].BlockName}");
             }
             Console.WriteLine("\n");
 
             Console.Write("Please Enter The Name Of Block Wich Want To Remove :");
             string name = Console.ReadLine();
 
-            Block BlockToRemove = Block.FindBlockByName(name);
+            Block BlockToRemove = Block.FindBlockByName(name,choosenhostel);
             if (BlockToRemove != null) 
             {
-                Hostel.BlockList.Remove(BlockToRemove);
+                 choosenhostel.BlockList.Remove(BlockToRemove);
 
                 Console.WriteLine("Block Removed Successfuly");
 

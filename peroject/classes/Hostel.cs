@@ -28,7 +28,7 @@ namespace classes
             }
         }
          public HostelManager ManagerName { get; set; }
-        public static List<Block> BlockList { get; set; }
+        public List<Block> BlockList { get; set; } = new List<Block>();
 
         public static Hostel FindHostelByName(string name)
         {

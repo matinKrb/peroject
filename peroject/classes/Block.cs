@@ -66,14 +66,14 @@ namespace classes
             HostelBlock = hostelBlock;
         }
 
-        public static Block FindBlockByName(string name)
+        public static Block FindBlockByName(string name , Hostel chossenhostel)
         {
             Block result = null;
-            for (int i = 0; i < Hostel.BlockList.Count; i++)
+            for (int i = 0; i < chossenhostel.BlockList.Count; i++)
             {
                 if (Lists.HostelList[i].Name == name)
                 {
-                    result = Hostel.BlockList[i];
+                    result = chossenhostel.BlockList[i];
                 }
 
             }
