@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
@@ -18,9 +19,10 @@ namespace classes
             Console.WriteLine(" 2 : Delete a Student ");
             Console.WriteLine(" 3 : Edit a Student ");
             Console.WriteLine(" 4 : Find a Student ");
-            Console.WriteLine(" 5 : Display All Information Of A Student  ");
-            Console.WriteLine(" 6 : Student Registration In Hostel ");
-            Console.WriteLine(" 7 : Transfer Student  ");
+            Console.WriteLine(" 5 : Student Registration In Hostel ");
+            Console.WriteLine(" 6 : Transfer Student  ");
+            Console.WriteLine(" 7 : Display All Information Of A Student  ");
+
             Console.WriteLine('\n');
 
             Console.Write("Please Enter The Option Number :");
@@ -92,20 +94,20 @@ namespace classes
 
                         case 2:FindStudentByStudentId();
                             break;
-
                     }
 
                     break;
 
                 case 5:
-                    DisplayAllInfoStudent();
-                    break;
-
-                case 6:
                     StudentRegistrationInHostel();
                     break;
 
+                case 6:
+                    MovingStudent();
+                    break;
+
                 case 7:
+                    DisplayAllInfoStudent();
                     break;
 
 
@@ -387,10 +389,7 @@ namespace classes
             }
         }
 
-        public static void DisplayAllInfoStudent()
-        {
-            Console.Clear();
-        }
+
 
         public static void StudentRegistrationInHostel()
         {
@@ -489,6 +488,10 @@ namespace classes
 
                             StudentToRegister.StRoom = Room.FindRoomByRoomNumber(RoomNumberToRegister, StudentToRegister.StBlock);
 
+                            Console.WriteLine("Registering Room Successfuly");
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+                            Console.Clear();
                             Console.WriteLine("Registering Successfuly");
                             Console.WriteLine("Press Any Button");
                             Console.ReadKey();
@@ -524,8 +527,200 @@ namespace classes
                 Console.WriteLine("Press Any Button");
                 Console.ReadKey();
             }
+        }
+        public static void MovingStudent()
+        {
+            Console.Clear();
+            if (Lists.StudentList.Count>0)
+            {
+                Console.Write("Please Enter The Student Id Who You Want to Change His Room (And bLock And Hostel) :");
+                long StudentIdToMove = 0;
 
+                try
+                {
+                    StudentIdToMove = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    StudentManagmentMainMenu = true;
 
+                    while (StudentManagmentMainMenu)
+                    {
+
+                        Program.MainMenu(ref StudentManagmentMainMenu);
+
+                    }
+                }
+                Student StudentToMove = Student.FindStudentByStudentId(StudentIdToMove);
+
+                Console.WriteLine('\n');
+                if (Lists.HostelList.Count > 0)
+                {
+                    Console.WriteLine("List Of Hotels :");
+                    Console.WriteLine('\n');
+                    for (int i = 0; i < Lists.HostelList.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1} : {Lists.HostelList[i].Name}");
+                    }
+                    Console.WriteLine('\n');
+                    Console.Write("Please Enter The Name Of Hostel Wich You Want To Transfer The Student To :");
+                    string HostelNameToMove = Console.ReadLine();
+
+                    StudentToMove.StHostel = Hostel.FindHostelByName(HostelNameToMove);
+                    Console.WriteLine('\n');
+                    Console.WriteLine("Replacing Hostel Successfuly");
+                    Console.WriteLine("Press Any Button to Replace Block And Room");
+                    Console.ReadKey();
+
+                    if (StudentToMove.StHostel.BlockList.Count > 0)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("List Of Blocks From New Hostel :");
+                        for (int i = 0; i < StudentToMove.StHostel.BlockList.Count; i++)
+                        {
+                            Console.WriteLine($"{i + 1} : {StudentToMove.StHostel.BlockList[i].BlockName}");
+                        }
+                        Console.WriteLine('\n');
+                        Console.Write("Please Enter The Name Of Block Wich You Want To Transfer The Student To :");
+                        string BlockNameToMove = Console.ReadLine();
+
+                        StudentToMove.StBlock = Block.FindBlockByName(BlockNameToMove, StudentToMove.StHostel);
+                        Console.WriteLine('\n');
+                        Console.WriteLine("Replacing Block Successfuly");
+                        Console.WriteLine("Press Any Button to Replace Room");
+                        Console.ReadKey();
+                        if (StudentToMove.StBlock.BlockRoomsList.Count > 0)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("List Of Rooms From This Block :");
+                            for (int i = 0; i < StudentToMove.StBlock.BlockRoomsList.Count; i++)
+                            {
+                                Console.WriteLine($"{i + 1} : Room {StudentToMove.StBlock.BlockRoomsList[i].roomNum}");
+                            }
+                            Console.WriteLine('\n');
+                            Console.Write("Please Enter The Room Nuber Wich You Want To Transfer The Student To :");
+                            int RoomNumberToMove = 0;
+
+                            try
+                            {
+                                RoomNumberToMove = int.Parse(Console.ReadLine());
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message);
+                                Console.WriteLine("Press Any Button");
+                                Console.ReadKey();
+                                StudentManagmentMainMenu = true;
+
+                                while (StudentManagmentMainMenu)
+                                {
+
+                                    Program.MainMenu(ref StudentManagmentMainMenu);
+
+                                }
+                            }
+
+                            StudentToMove.StRoom = Room.FindRoomByRoomNumber(RoomNumberToMove, StudentToMove.StBlock);
+
+                            Console.WriteLine("Replacing Room Successfuly");
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+                            Console.Clear();
+                            Console.WriteLine("Transfering Student Successfuly");
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+
+                        }
+                        else
+                        {
+                            Console.WriteLine('\n');
+                            Console.WriteLine("There Is No Room From This Block To Replace");
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine('\n');
+                        Console.WriteLine("There Is No Block From This Hostel To Replace");
+                        Console.WriteLine("Press Any Button");
+                        Console.ReadKey();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("There Is No Hostel To Replace!");
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                }
+            }
+            else
+            {
+                Console.WriteLine("There Is No Student To Transfer!");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
+        }
+        public static void DisplayAllInfoStudent()
+        {
+            Console.Clear();
+            if (Lists.StudentList.Count > 0)
+            {
+                Console.Write("Please Enter The Student Id Who You Want To Display His Information :");
+                long StudentIdToDisplay = 0;
+
+                try
+                {
+                    StudentIdToDisplay = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    StudentManagmentMainMenu = true;
+
+                    while (StudentManagmentMainMenu)
+                    {
+
+                        Program.MainMenu(ref StudentManagmentMainMenu);
+
+                    }
+                }
+                Student StudentToDisplay = Student.FindStudentByStudentId(StudentIdToDisplay);
+
+                Console.Clear();
+                Console.WriteLine($"Name : {StudentToDisplay.Name}");
+                Console.WriteLine($"Family : {StudentToDisplay.Family}");
+                Console.WriteLine($"National Code : {StudentToDisplay.NationalCode}");
+                Console.WriteLine($"Phone Number : {StudentToDisplay.PhoneNumber}");
+                Console.WriteLine($"Address : {StudentToDisplay.Addres}");
+                Console.WriteLine($"Student Id : {StudentToDisplay.StudentId}");
+                Console.WriteLine('\n');
+                Console.WriteLine($"Student Hostel : {StudentToDisplay.StHostel.Name}");
+                Console.WriteLine($"Student Block : {StudentToDisplay.StBlock.BlockName}");
+                Console.WriteLine($"Student Room : {StudentToDisplay.StRoom.roomNum}");
+                Console.WriteLine('\n');
+                Console.WriteLine("List Of Student Equipment :");
+                for (int i = 0; i < StudentToDisplay.StEquipment.Count; i++)
+                {
+                    Console.WriteLine($"{i+1} : {StudentToDisplay.StEquipment[i].EqType}");
+                }
+                Console.WriteLine("\n");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+
+            }
+            else
+            {
+                Console.WriteLine("There Is No Student To Display!");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
         }
     }
 }
