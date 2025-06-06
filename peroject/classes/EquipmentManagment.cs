@@ -319,12 +319,12 @@ namespace classes
 
 
 
-
+//******************************************************************
         public static void ManagingTheMovementOfEquipment()
         {
             Console.Clear();
-            Console.WriteLine("1: Add Movment Of Equipment Between Rooms");
-            Console.WriteLine("2: Add Replacement Of Student Equipment");
+            Console.WriteLine("1: Replacement Of Equipment Between Rooms");
+            Console.WriteLine("2: Replacement Of Student Equipment");
             Console.WriteLine('\n');
             Console.Write("Please Enter Number Option :");
             int EquipmenManagingTheMovementOfEquipmentNumberOption = 0;
@@ -350,24 +350,295 @@ namespace classes
             switch (EquipmenManagingTheMovementOfEquipmentNumberOption)
             {
                 case 1:
-                    AddMovmentOfEquipmentBetweenRooms();
+                    ReplacmentOfEquipmentBetweenRooms();
 
 
                     break;
 
                 case 2:
-                    AddReplacementOfStudentEquipment();
+                    ReplacementOfStudentEquipment();
 
                     break;
             }
         }
-        public static void AddMovmentOfEquipmentBetweenRooms()
+        public static void ReplacmentOfEquipmentBetweenRooms()
         {
             Console.Clear();
+            Console.WriteLine("Ok! Now We Have To Choose Two Rooms For Replacing Their Equipments.");
+            Console.WriteLine("Press Any Key To Continue");
+            Console.ReadKey();
+            Console.WriteLine("First Of All You should Choose The Hostel Of First Room From The List Below:");
+            Console.WriteLine('\n');
+
+            for (int i = 0; i < Lists.HostelList.Count; i++)
+            {
+                Console.WriteLine($"1: {Lists.HostelList[i].Name}");
+            }
+            Console.WriteLine('\n');
+
+            Console.Write("Please Enter The Name Of First Hostel:");
+            string FirstHostelName = Console.ReadLine();
+            Hostel FirstHostel = Hostel.FindHostelByName(FirstHostelName);
+
+            Console.Clear();
+            Console.WriteLine("Ok Now You Should Choose The First Block From The List Below: ");
+            Console.WriteLine('\n');
+
+            for (int i = 0; i < FirstHostel.BlockList.Count; i++)
+            {
+                Console.WriteLine($"1: {FirstHostel.BlockList[i].BlockName}");
+            }
+            Console.WriteLine('\n');
+
+            Console.Write("Please Enter The Name Of First Block:");
+            string FirstBlockName = Console.ReadLine();
+            Block FirstBlock = Block.FindBlockByName(FirstBlockName, FirstHostel);
+
+            Console.Clear();
+            Console.WriteLine("And Finally You Should Choose First Room From The List Below:");
+            Console.WriteLine('\n');
+
+            for (int i = 0; i < FirstBlock.BlockRoomsList.Count; i++)
+            {
+                Console.WriteLine($"1: {FirstBlock.BlockRoomsList[i].roomNum}");
+            }
+            Console.WriteLine('\n');
+
+            Console.Write("Please Enter The Room Number:");
+
+            int FirstRoomNum = 0;
+
+            try
+            {
+                FirstRoomNum = int.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
+
+            Room FirstRoom = Room.FindRoomByRoomNumber(FirstRoomNum, FirstBlock);
+            Console.WriteLine();
+            Console.WriteLine("First Room Successfuly Detected!");
+
+            Console.Clear();
+            Console.WriteLine("Now You should Choose The Hostel Of Second Room From The List Below:");
+            Console.WriteLine('\n');
+
+            for (int i = 0; i < Lists.HostelList.Count; i++)
+            {
+                Console.WriteLine($"1: {Lists.HostelList[i].Name}");
+            }
+            Console.WriteLine('\n');
+
+            Console.Write("Please Enter The Name Of Second Hostel:");
+            string SecondHostelName = Console.ReadLine();
+            Hostel SecondHostel = Hostel.FindHostelByName(SecondHostelName);
+
+            Console.Clear();
+            Console.WriteLine("Ok Now You Should Choose The Second Block From The List Below: ");
+            Console.WriteLine('\n');
+
+            for (int i = 0; i < SecondHostel.BlockList.Count; i++)
+            {
+                Console.WriteLine($"1: {SecondHostel.BlockList[i].BlockName}");
+            }
+            Console.WriteLine('\n');
+
+            Console.Write("Please Enter The Name Of Second Block:");
+            string SecondBlockName = Console.ReadLine();
+            Block SecondBlock = Block.FindBlockByName(SecondBlockName, SecondHostel);
+
+           
+            Console.Clear();
+            Console.WriteLine("And Finally You Should Choose Second Room From The List Below:");
+            Console.WriteLine('\n');
+
+            for (int i = 0; i < SecondBlock.BlockRoomsList.Count; i++)
+            {
+                Console.WriteLine($"1: {SecondBlock.BlockRoomsList[i].roomNum}");
+            }
+            Console.WriteLine('\n');
+
+            Console.Write("Please Enter The Room Number:");
+
+            int SecondRoomNum = 0;
+
+            try
+            {
+                SecondRoomNum = int.Parse(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
+
+            Room SecondRoom = Room.FindRoomByRoomNumber(SecondRoomNum, SecondBlock);
+            Console.WriteLine();
+            Console.WriteLine("Second Room Successfuly Detected!");
+            Console.WriteLine("Press Any Key To Continue");
+            Console.ReadKey();
+
+            Console.Clear();
+            Console.WriteLine("Now You Should Choose First Equipment From Firs Room To Transfer To second Room ");
+            Console.WriteLine("Firs Room Equipments List:");
+            Console.WriteLine('\n');
+            for (int j = 0; j < FirstRoom.RoomEq.Count; j++)
+            {
+                Console.WriteLine($"{j + 1}: Type: {FirstRoom.RoomEq[j].EqType} , Part Number: {FirstRoom.RoomEq[j].PartNumber} , Property Number: {FirstRoom.RoomEq[j].PropNum} ");
+            }
+
+            Console.WriteLine('\n');
+            Console.Write("Please Enter The PropNumber Of Equipment:");
+            string FirstPropNum = Console.ReadLine();
+
+            Console.Clear();
+            Console.WriteLine("Now You Should Choose Second Equipment From Second Room To Transfer To First Room");
+            Console.WriteLine('\n');
+
+            Console.WriteLine("Second Room Equipments List:");
+            Console.WriteLine('\n');
+            for (int j = 0; j < SecondRoom.RoomEq.Count; j++)
+            {
+                Console.WriteLine($"{j + 1}: Type: {SecondRoom.RoomEq[j].EqType} , Part Number: {SecondRoom.RoomEq[j].PartNumber} , Property Number: {SecondRoom.RoomEq[j].PropNum} ");
+            }
+            Console.WriteLine('\n');
+
+            Console.WriteLine("Pay Attention!!!");
+            Console.WriteLine("Type Of First Equipment And Second Equipment Must Be Same!");
+            Console.WriteLine();
+            Console.WriteLine("Please Enter The PropNumber Of Second Equipment:");
+            string SecondPropNum = Console.ReadLine();
+
+            EquipmentsReplacment(FirstPropNum, SecondPropNum);
+            Console.WriteLine('\n');
+            Console.WriteLine("Equipments Replaced Successfuly");
+
         }
-        public static void AddReplacementOfStudentEquipment()
+
+        public static void EquipmentsReplacment(string FirstPropNum , string SecondPropNum) 
+        {
+            Equipment FirstEquipment = FindEquipmentByPropNum(FirstPropNum);
+            Equipment SecondEquipment = FindEquipmentByPropNum(SecondPropNum);
+            Equipment Temp = null;
+
+            Temp = FirstEquipment;
+            FirstEquipment = SecondEquipment;
+            SecondEquipment = Temp;
+
+        }
+        public static void ReplacementOfStudentEquipment()
         {
             Console.Clear();
+            Console.WriteLine("First Of All You Should Choose Two Students Who You Wanna Replace Their Equipments");
+            Console.WriteLine('\n');
+            Console.Write("please Enter The Student Id Of First Student:");
+            long FirstStudentId = 0;
+
+            try
+            {
+                FirstStudentId = Convert.ToInt64(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
+
+            Student FirstStudent = Student.FindStudentByStudentId(FirstStudentId);
+            Console.WriteLine('\n');
+
+
+            Console.Clear();
+            Console.Write("Now please Enter The Student Id Of Second Student:");
+            long SecondStudentId = 0;
+
+            try
+            {
+                SecondStudentId = Convert.ToInt64(Console.ReadLine());
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
+
+            Student SecondStudent = Student.FindStudentByStudentId(SecondStudentId);
+            Console.WriteLine('\n');
+
+            Console.Clear();
+            Console.WriteLine("Now You Should Choose First Equipment From First Student From The List Below");
+            Console.WriteLine('\n');
+            Console.WriteLine("Equipments Of First Student List:");
+            Console.WriteLine('\n');
+            for (int i = 0; i <FirstStudent.StEquipment.Count ; i++) 
+            {
+                Console.WriteLine($"{i+1}: Type: {FirstStudent.StEquipment[i].EqType} , PropNumber: {FirstStudent.StEquipment[i].PropNum}");
+            }
+
+            Console.WriteLine('\n');
+            Console.Write("Please Enter The Prop Number Of First Equipment: ");
+            string FirstPropNum = Console.ReadLine();
+
+
+            Console.Clear();
+            Console.WriteLine("Now You Should Choose Second Equipment From Second Student From The List Below");
+            Console.WriteLine('\n');
+            Console.WriteLine("Equipments Of Second Student List:");
+            Console.WriteLine('\n');
+            for (int i = 0; i < SecondStudent.StEquipment.Count; i++)
+            {
+                Console.WriteLine($"{i + 1}: Type: {SecondStudent.StEquipment[i].EqType} , PropNumber: {SecondStudent.StEquipment[i].PropNum}");
+            }
+
+            Console.WriteLine('\n');
+            Console.WriteLine("Pay Attention!!!");
+            Console.WriteLine("Type Of First Equipment And Second Student Must Be Same!");
+            Console.WriteLine();
+            Console.Write("Please Enter The Prop Number Of second Equipment: ");
+            string SecondPropNum = Console.ReadLine();
+
+            EquipmentsReplacment(FirstPropNum, SecondPropNum);
+            Console.WriteLine("Equipments Replaced Successfuly");
+
         }
 
 
