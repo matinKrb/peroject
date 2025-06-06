@@ -3,28 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\studentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\studentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\equipmentreporting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipmentreporting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\specializadreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\specializadreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\student.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\accommodationreporting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\accommodationreporting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\personmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\personmanagement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\person.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\room.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\reporting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\reporting.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,13 +34,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 4,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Program.cs",
               "RelativeDocumentMoniker": "classes\\Program.cs",
               "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Program.cs",
               "RelativeToolTip": "classes\\Program.cs",
-              "ViewState": "AgIAALcAAAAAAAAAAAASwIgAAAAYAAAAAAAAAA==",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAmwNkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-30T06:45:33.281Z",
               "IsPinned": true,
@@ -57,79 +49,53 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Equipment.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Equipment.cs",
-              "RelativeDocumentMoniker": "classes\\Equipment.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Equipment.cs",
-              "RelativeToolTip": "classes\\Equipment.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABcAAAAjAAAAAAAAAA==",
+              "Title": "SpecializadReport.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\SpecializadReport.cs",
+              "RelativeDocumentMoniker": "classes\\SpecializadReport.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\SpecializadReport.cs",
+              "RelativeToolTip": "classes\\SpecializadReport.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwA4AAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T09:16:00.631Z",
+              "WhenOpened": "2025-06-06T11:03:14.64Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "StudentManagment.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\StudentManagment.cs",
-              "RelativeDocumentMoniker": "classes\\StudentManagment.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\StudentManagment.cs",
-              "RelativeToolTip": "classes\\StudentManagment.cs",
-              "ViewState": "AgIAAEICAAAAAAAAAAAuwF8BAAAIAAAAAAAAAA==",
+              "Title": "EquipmentReporting.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\EquipmentReporting.cs",
+              "RelativeDocumentMoniker": "classes\\EquipmentReporting.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\EquipmentReporting.cs",
+              "RelativeToolTip": "classes\\EquipmentReporting.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T08:41:00.734Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PersonManagement.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\PersonManagement.cs",
-              "RelativeDocumentMoniker": "classes\\PersonManagement.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\PersonManagement.cs",
-              "RelativeToolTip": "classes\\PersonManagement.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T05:47:40.572Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Room.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Room.cs",
-              "RelativeDocumentMoniker": "classes\\Room.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Room.cs",
-              "RelativeToolTip": "classes\\Room.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAwwGcAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T07:01:35.725Z",
+              "WhenOpened": "2025-06-06T10:52:00.323Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Student.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Student.cs",
-              "RelativeDocumentMoniker": "classes\\Student.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Student.cs",
-              "RelativeToolTip": "classes\\Student.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF0AAAAAAAAAAAAAAA==",
+              "Title": "AccommodationReporting.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\AccommodationReporting.cs",
+              "RelativeDocumentMoniker": "classes\\AccommodationReporting.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\AccommodationReporting.cs",
+              "RelativeToolTip": "classes\\AccommodationReporting.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBUAAAAPAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T05:47:56.762Z",
+              "WhenOpened": "2025-06-06T10:40:34.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Person.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Person.cs",
-              "RelativeDocumentMoniker": "classes\\Person.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Person.cs",
-              "RelativeToolTip": "classes\\Person.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "Reporting.cs",
+              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Reporting.cs",
+              "RelativeDocumentMoniker": "classes\\Reporting.cs",
+              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\Reporting.cs",
+              "RelativeToolTip": "classes\\Reporting.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAwwA8AAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-06T05:47:49.242Z",
+              "WhenOpened": "2025-06-06T10:31:39.093Z",
               "EditorCaption": ""
             }
           ]

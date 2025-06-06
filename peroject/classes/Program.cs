@@ -215,6 +215,7 @@ namespace classes
                     break;
 
                 case 5:
+                    Reporting.ReportingMenu();
                     break;
 
                 case 6:

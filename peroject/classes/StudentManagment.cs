@@ -617,9 +617,7 @@ namespace classes
 
                                 while (StudentManagmentMainMenu)
                                 {
-
                                     Program.MainMenu(ref StudentManagmentMainMenu);
-
                                 }
                             }
 
