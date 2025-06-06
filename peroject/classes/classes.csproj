@@ -43,12 +43,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AccommodationReporting.cs" />
     <Compile Include="Block.cs" />
     <Compile Include="BlockManager.cs" />
     <Compile Include="BlockManagerManagment.cs" />
     <Compile Include="BlockManagment.cs" />
     <Compile Include="Equipment.cs" />
     <Compile Include="EquipmentManagment.cs" />
+    <Compile Include="EquipmentReporting.cs" />
     <Compile Include="HostelManagement.cs" />
     <Compile Include="Hostel.cs" />
     <Compile Include="HostelManager.cs" />
@@ -58,8 +60,10 @@
     <Compile Include="PersonManagement.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reporting.cs" />
     <Compile Include="Room.cs" />
     <Compile Include="RooomManagment.cs" />
+    <Compile Include="SpecializadReport.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="StudentManagment.cs" />
     <Compile Include="User.cs" />
