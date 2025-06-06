@@ -45,16 +45,12 @@ namespace classes
             if(result==null)
             {
                 Console.WriteLine("Hostel Not Found");
-                Console.WriteLine("Press Any Button ");
+                Console.WriteLine("Press Any Button");
                 Console.ReadKey();
-
                 HostelMainMenu = true;
-
                 while (HostelMainMenu)
                 {
-
                     Program.MainMenu(ref HostelMainMenu);
-
                 }
             }
             return result;

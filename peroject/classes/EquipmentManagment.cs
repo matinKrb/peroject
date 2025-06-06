@@ -289,29 +289,24 @@ namespace classes
 
             Console.WriteLine("Enter The Choosen Refrigerator(PropNum):");
             string RefrigeratorPropNum = Console.ReadLine();
-            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(RefrigeratorPropNum));
-
 
             Console.WriteLine("Enter The Choosen Table(PropNum):");
             string TablePropNum = Console.ReadLine();
-            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(TablePropNum));
-
 
             Console.WriteLine("Enter The Choosen Chair(PropNum):");
             string ChairPropNum = Console.ReadLine();
-            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(ChairPropNum));
-
 
             Console.WriteLine("Enter The Choosen Bed(PropNum):");
             string BedPropNum = Console.ReadLine();
-            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(BedPropNum));
-
 
             Console.WriteLine("Enter The Choosen Closet(PropNum):");
             string ClosetPropNum = Console.ReadLine();
+
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(RefrigeratorPropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(TablePropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(ChairPropNum));
+            OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(BedPropNum));
             OwnerStudent.StEquipment.Add(FindEquipmentByPropNum(ClosetPropNum));
-
-
             Console.WriteLine('\n');
             Console.WriteLine($"Equipments Successfuly Allocated To {OwnerStudent.Name} {OwnerStudent.Family}");
         }

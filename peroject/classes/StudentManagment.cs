@@ -98,9 +98,11 @@ namespace classes
                     break;
 
                 case 5:
+                    DisplayAllInfoStudent();
                     break;
 
                 case 6:
+                    StudentRegistrationInHostel();
                     break;
 
                 case 7:
@@ -383,6 +385,147 @@ namespace classes
             {
                 Console.WriteLine($"Name Is :{FindedStudentByID.Name} , Family Is : {FindedStudentByID.Family} , Student ID Is : {FindedStudentByID.StudentId} , National Code Is : {FindedStudentByID.NationalCode} , Phone Number Is : {FindedStudentByID.PhoneNumber} , Address Is : {FindedStudentByID.Addres}");
             }
+        }
+
+        public static void DisplayAllInfoStudent()
+        {
+            Console.Clear();
+        }
+
+        public static void StudentRegistrationInHostel()
+        {
+            Console.Clear();
+            if (Lists.StudentList.Count>0)
+            {
+                Console.Write("Please Enter The Student Id Who You Want to Registration To Hostel :");
+                long StudentIdToRegister = 0;
+
+                try
+                {
+                    StudentIdToRegister = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    StudentManagmentMainMenu = true;
+
+                    while (StudentManagmentMainMenu)
+                    {
+
+                        Program.MainMenu(ref StudentManagmentMainMenu);
+
+                    }
+                }
+                Student StudentToRegister = Student.FindStudentByStudentId(StudentIdToRegister);
+
+                Console.WriteLine('\n');
+                if (Lists.HostelList.Count>0)
+                {
+                    Console.WriteLine("List Of Hotels :");
+                    Console.WriteLine('\n');
+                    for (int i = 0; i < Lists.HostelList.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1} : {Lists.HostelList[i].Name}");
+                    }
+                    Console.WriteLine('\n');
+                    Console.Write("Please Enter The Name Of Hostel Wich You Want To Register Student At :");
+                    string HostelNameToRegister = Console.ReadLine();
+
+                    StudentToRegister.StHostel = Hostel.FindHostelByName(HostelNameToRegister);
+                    Console.WriteLine('\n');
+                    Console.WriteLine("Registering Hostel Successfuly");
+                    Console.WriteLine("Press Any Button to Regitration Block And Room");
+                    Console.ReadKey();
+
+                    if (StudentToRegister.StHostel.BlockList.Count>0)
+                    {
+                        Console.Clear();
+                        Console.WriteLine("List Of Blocks From This Hostel :");
+                        for (int i = 0; i < StudentToRegister.StHostel.BlockList.Count; i++)
+                        {
+                            Console.WriteLine($"{i+1} : {StudentToRegister.StHostel.BlockList[i].BlockName}");
+                        }
+                        Console.WriteLine('\n');
+                        Console.Write("Please Enter The Name Of Block Wich You Want To Register Student At :");
+                        string BlockNameToRegister = Console.ReadLine();
+
+                        StudentToRegister.StBlock = Block.FindBlockByName(BlockNameToRegister,StudentToRegister.StHostel);
+                        Console.WriteLine('\n');
+                        Console.WriteLine("Registering Block Successfuly");
+                        Console.WriteLine("Press Any Button to Regitration Room");
+                        Console.ReadKey();
+                        if (StudentToRegister.StBlock.BlockRoomsList.Count>0)
+                        {
+                            Console.Clear();
+                            Console.WriteLine("List Of Rooms From This Block :");
+                            for (int i = 0; i < StudentToRegister.StBlock.BlockRoomsList.Count; i++)
+                            {
+                                Console.WriteLine($"{i+1} : Room {StudentToRegister.StBlock.BlockRoomsList[i].roomNum}");
+                            }
+                            Console.WriteLine('\n');
+                            Console.Write("Please Enter The Room Number Wich You Want To Register Student At :");
+                            int RoomNumberToRegister = 0;
+
+                            try
+                            {
+                                RoomNumberToRegister = int.Parse(Console.ReadLine());
+                            }
+                            catch (Exception ex)
+                            {
+                                Console.WriteLine(ex.Message);
+                                Console.WriteLine("Press Any Button");
+                                Console.ReadKey();
+                                StudentManagmentMainMenu = true;
+
+                                while (StudentManagmentMainMenu)
+                                {
+
+                                    Program.MainMenu(ref StudentManagmentMainMenu);
+
+                                }
+                            }
+
+                            StudentToRegister.StRoom = Room.FindRoomByRoomNumber(RoomNumberToRegister, StudentToRegister.StBlock);
+
+                            Console.WriteLine("Registering Successfuly");
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+
+                        }
+                        else
+                        {
+                            Console.WriteLine('\n');
+                            Console.WriteLine("There Is No Room From This Block");
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+                        }
+
+                    }
+                    else
+                    {
+                        Console.WriteLine('\n');
+                        Console.WriteLine("There Is No Block From This Hostel");
+                        Console.WriteLine("Press Any Button");
+                        Console.ReadKey();
+                    }
+                }
+                else
+                {
+                    Console.WriteLine("There Is No Hostel To Register !");
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                }
+            }
+            else
+            {
+                Console.WriteLine("There Is No Student To Register !");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
+
+
         }
     }
 }

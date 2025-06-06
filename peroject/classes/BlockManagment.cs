@@ -30,7 +30,6 @@ namespace classes
                 Console.WriteLine('\n');
 
                 ChoosenHostel = Hostel.FindHostelByName(name);
-                Console.WriteLine("Press Any Button!");
             }
             else
             {
