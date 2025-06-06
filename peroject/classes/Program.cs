@@ -14,6 +14,7 @@ namespace classes
        
         static void Main(string[] args)
         {
+            
 
 
             Console.WriteLine("Welcome To Hostel Managing Application ");

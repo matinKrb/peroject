@@ -12,16 +12,17 @@ namespace classes
         
         public string PartNumber { get; set; }
 
-        public string PropNum { get; set; } 
-        
+        public string PropNum { get; set; }
+
+        private string status;
         public string Status
         {
-            get { return Status; }
+            get { return status; }
             set
             {
-                if (value == "Intact" && value == "Damaged" && value == "Fixing")
+                if (value == "Intact" || value == "Defective" || value == "Fixing")
                 {
-                    EqType = value;
+                    status = value;
                 }
                 else
                 {
@@ -47,6 +48,7 @@ namespace classes
             PartNumber = partNumber;
             PropNum = propNum;
         }
+        
 
     }
 }
