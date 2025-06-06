@@ -30,7 +30,7 @@ namespace classes
             }
         }
         public Room EqRoom{ get; set; }
-        public Student EqOwner{ get; set; }
+        public Student EqOwner { get; set; }
 
         public Equipment(string eqType, string partNumber, String propNum, string status, Room eqRoom, Student eqOwner)
         {
