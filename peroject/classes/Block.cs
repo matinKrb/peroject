@@ -8,6 +8,7 @@ namespace classes
 {
     public class Block
     {
+        public static bool BlockMainMenu = true;
         public string BlockName { get; set; }
 
         private int BlockFloors;
@@ -80,6 +81,14 @@ namespace classes
             if (result == null)
             {
                 Console.WriteLine("Block Not Found");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+
+                BlockMainMenu = true;
+                while (BlockMainMenu)
+                {
+                    Program.MainMenu(ref BlockMainMenu);
+                }
             }
             return result;
         }

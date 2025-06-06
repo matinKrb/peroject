@@ -10,6 +10,7 @@ namespace classes
     
     public class Room
     {
+        public static bool RoomMainMenu = true;
         private int RoomNum;
         public int roomNum
         {
@@ -96,6 +97,12 @@ namespace classes
             {
                 Console.WriteLine("Room Not Found");
                 Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                RoomMainMenu = true;
+                while (RoomMainMenu)
+                {
+                    Program.MainMenu(ref RoomMainMenu);
+                }
 
             }
             return result;

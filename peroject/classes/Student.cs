@@ -8,6 +8,7 @@ namespace classes
 {
     public class Student : Person
     {
+        public static bool StudentMainMenu = true;
 
         public long StudentId {  get; set; }
         //{
@@ -42,6 +43,13 @@ namespace classes
             StHostel = stHostel;
             StEquipment = stEquipment;
         }
+        public Student(long studentId, Room stRoom, Block stBlock, Hostel stHostel, string name, string family, string phoneNumber, long nationalCode, string addres) : base(name, family, nationalCode, phoneNumber, addres)
+        {
+            StudentId = studentId;
+            StRoom = stRoom;
+            StBlock = stBlock;
+            StHostel = stHostel;
+        }
         public void SignUp()
         {
 
@@ -59,6 +67,13 @@ namespace classes
             if (result == null)
             {
                 Console.WriteLine("Student Not Found");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                StudentMainMenu = true;
+                while (StudentMainMenu)
+                {
+                    Program.MainMenu(ref StudentMainMenu);
+                }
             }
             return result;
         }
@@ -75,6 +90,13 @@ namespace classes
             if (result == null)
             {
                 Console.WriteLine("Student Not Found");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+                StudentMainMenu = true;
+                while (StudentMainMenu)
+                {
+                    Program.MainMenu(ref StudentMainMenu);
+                }
             }
             return result;
         }
