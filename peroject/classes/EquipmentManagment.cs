@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace classes
 {
-    
+
 
     public class EquipmentManagment
     {
@@ -86,13 +86,13 @@ namespace classes
             Console.Write("Part Number:");
 
             string PartNumber = Console.ReadLine();
-           
-            long HelpPropNum = 10000 +EquipmentsCount ;
+
+            long HelpPropNum = 10000 + EquipmentsCount;
 
             string PropNum = $"{HelpPropNum}{PartNumber}";
-            
 
-            Equipment NewEquipment = new Equipment(Type , PartNumber , PropNum);
+
+            Equipment NewEquipment = new Equipment(Type, PartNumber, PropNum);
             EquipmentsCount++;
             Lists.EquipmentsList.Add(NewEquipment);
             Console.WriteLine("Equipment Added Successfuly");
@@ -103,23 +103,26 @@ namespace classes
             Console.WriteLine("\n");
             for (int j = 0; j < Lists.EquipmentsList.Count; j++)
             {
-                Console.WriteLine($"{j+1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
+                Console.WriteLine($"{j + 1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
             }
 
             Console.WriteLine("Press Any Button ");
-            Console.ReadKey();           
+            Console.ReadKey();
         }
 
-        public static Equipment FindEquipmentByPropNum(string propnum) 
+        public static Equipment FindEquipmentByPropNum(string propnum)
         {
             Equipment Result = null;
             for (int i = 0; i < Lists.EquipmentsList.Count; i++)
             {
                 if (Lists.EquipmentsList[i].PropNum == propnum)
                 {
-                     Result = Lists.EquipmentsList[i];
+                    Result = Lists.EquipmentsList[i];
                 }
-                else
+
+            }
+            if (Result == null)
+            {
                 {
                     Console.WriteLine("Equipment Not Found!");
                     Console.WriteLine("Press Any Button ");
@@ -136,7 +139,8 @@ namespace classes
                 }
             }
             return Result;
-        } 
+
+        }
 
 
 
@@ -145,15 +149,33 @@ namespace classes
         public static void AllocationEquipmentToRoomMenu()
         {
             Console.Clear();
-            Console.WriteLine("1: Choose Desired Room");
-            Console.WriteLine("2: Allocating Equipment To Room");
-            Console.WriteLine('\n');
-            Console.Write("Please Enter Number Of Option :");
-            int EquipmenAllocatingRoomNumberOption = 0;
+            Console.Write("Please Enter The Hostel Name Wich You Wanna Manage Its Equipments :");
+            string HostelName = Console.ReadLine();
+            Hostel FoundHostel = Hostel.FindHostelByName(HostelName);
+            Console.WriteLine("Now You Should Chosse Block From The List Below ");
+            for (int i = 0; i < FoundHostel.BlockList.Count; i++)
+            {
+                Console.WriteLine($"{i+1}:{FoundHostel.BlockList[i].BlockName}");
+                Console.WriteLine();
+            }
 
+            Console.Write("Please Enter The Block Name Wich You Wanna Manage Its Equipment :");
+            string BlockName = Console.ReadLine();
+            
+            Block FoundBlock = Block.FindBlockByName(BlockName, FoundHostel);
+            Console.WriteLine("Now You Should Chosse Room From The List Below ");
+            for (int i = 0; i < FoundBlock.BlockRoomsList.Count; i++)
+            {
+                Console.WriteLine($"{i+1}:Room {FoundBlock.BlockRoomsList[i].roomNum}");
+                Console.WriteLine();
+            }
+            Console.WriteLine('\n');
+            Console.Write("Please Enter The Room Number Wich You Wanna Manage Its Equipment :");
+
+            int RoomNum = 0;
             try
             {
-                EquipmenAllocatingRoomNumberOption = Convert.ToInt32(Console.ReadLine());
+                RoomNum = Convert.ToInt32(Console.ReadLine());
             }
             catch (Exception ex)
             {
@@ -169,32 +191,63 @@ namespace classes
 
                 }
             }
-            switch (EquipmenAllocatingRoomNumberOption)
+            Room FoundRoom = Room.FindRoomByRoomNumber(RoomNum,FoundBlock);
+            Console.WriteLine('\n');
+            Console.WriteLine("Now You Should Chosse Equipments From The List Below ");
+            Console.WriteLine('\n');
+            
+            for (int j = 0; j < Lists.EquipmentsList.Count; j++)
             {
-                case 1:
-                    ChooseDesiredRoom();
-
-                    break;
-
-                case 2:
-                    AllocatingEquipmentToRoom();
-
-                    break;
+                Console.WriteLine($"{j + 1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
             }
+            Console.WriteLine('\n');
+            Console.Write("Enter The Choosen Refrigerator(PropNum):");
+            string RefrigeratorPropNum = Console.ReadLine();
+            FoundRoom.RoomEq.Add(FindEquipmentByPropNum(RefrigeratorPropNum));
+            Console.WriteLine('\n');
+            for (int i = 1; i <= 6; i++)
+            {
+                Console.Write($"Enter The Choosen Table{i} (PropNum) :");
+                string TablePropNum = Console.ReadLine();
+                FoundRoom.RoomEq.Add(FindEquipmentByPropNum(TablePropNum));
+
+            }
+            Console.WriteLine('\n');
+            for (int i = 1; i <= 6; i++)
+            {
+                Console.Write($"Enter The Choosen Chair{i} (PropNum) :");
+                string ChairPropNum = Console.ReadLine();
+                FoundRoom.RoomEq.Add(FindEquipmentByPropNum(ChairPropNum));
+
+            }
+            Console.WriteLine('\n');
+            for (int i = 1; i <= 6; i++)
+            {
+                Console.Write($"Enter The Choosen Bed{i} (PropNum) :");
+                string BedPropNum = Console.ReadLine();
+                FoundRoom.RoomEq.Add(FindEquipmentByPropNum(BedPropNum));
+
+            }
+            Console.WriteLine('\n');
+            for (int i = 1; i <= 6; i++)
+            {
+                Console.Write($"Enter The Choosen Closet{i} (PropNum) :");
+                string ClosetPropNum = Console.ReadLine();
+                FoundRoom.RoomEq.Add(FindEquipmentByPropNum(ClosetPropNum));
+
+            }
+            
+            Console.WriteLine('\n');
+            Console.WriteLine($"Equipments Successfuly Allocated To Room {FoundRoom.roomNum}");
+            Console.WriteLine("Press Any Button!");
+            Console.ReadKey();
         }
-        public static void ChooseDesiredRoom()
-        {
-            Console.Clear();
-        }
-        public static void AllocatingEquipmentToRoom()
-        {
-            Console.Clear();
-        }
 
 
 
 
-//****************************************************************************************
+
+        //****************************************************************************************
 
         public static void AllocatingEquipmentToStudentMenu()
         {
@@ -262,7 +315,7 @@ namespace classes
             Console.WriteLine('\n');
             Console.WriteLine($"Equipments Successfuly Allocated To {OwnerStudent.Name} {OwnerStudent.Family}");
         }
-        
+
 
 
 
@@ -364,7 +417,7 @@ namespace classes
                     break;
             }
         }
-        public static void AddFixingRequestThroughPartNumber() 
+        public static void AddFixingRequestThroughPartNumber()
         {
             Console.Clear();
         }
@@ -373,7 +426,7 @@ namespace classes
             Console.Clear();
         }
         public static void AddDefectiveEquipment()
-        { 
+        {
             Console.Clear();
         }
     }

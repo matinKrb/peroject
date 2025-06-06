@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace classes
 {
 
-    
+
     public class Room
     {
         private int RoomNum;
@@ -59,8 +59,8 @@ namespace classes
                 }
             }
         }
-        public List<Equipment> RoomEq { get; set; }
-        public List<Student> RoomSt { get; set; }
+        public List<Equipment> RoomEq { get; set; } = new List<Equipment>();
+        public List<Student> RoomSt { get; set; } =new List<Student>();
         public Block RoomBlock { get; set; }
 
         public Room(int roomNum, int roomFloor, int capacity, List<Equipment> roomEq, List<Student> roomSt, Block roomBlock)
@@ -80,8 +80,18 @@ namespace classes
             this.capacity = capacity;
             RoomBlock = roomBlock;
         }
+        public Room(int roomNum, int roomFloor, int capacity, List<Equipment> roomEq)
+        {
+            this.roomNum = roomNum;
 
-        public static Room FindRoomByRoomNumber(int roomnumber,Block blocktomanageitsroom)
+            this.roomFloor = roomFloor;
+
+            this.capacity = capacity;
+
+            this.RoomEq = roomEq;
+        }
+
+        public static Room FindRoomByRoomNumber(int roomnumber, Block blocktomanageitsroom)
         {
             Room result = null;
             for (int i = 0; i < blocktomanageitsroom.BlockRoomsList.Count; i++)
@@ -96,7 +106,7 @@ namespace classes
             {
                 Console.WriteLine("Room Not Found");
                 Console.WriteLine("Press Any Button");
-
+                Console.ReadKey();
             }
             return result;
         }

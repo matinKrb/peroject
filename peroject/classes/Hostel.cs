@@ -8,6 +8,7 @@ namespace classes
 {
     public class Hostel
     {
+        public static bool HostelMainMenu = true;
         public string Name { get; set; }
         public string Address { get; set; }
 
@@ -33,7 +34,7 @@ namespace classes
         public static Hostel FindHostelByName(string name)
         {
             Hostel result = null;
-            for (int i = 0; i < Lists.HostelManagerList.Count; i++)
+            for (int i = 0; i < Lists.HostelList.Count; i++)
             {
                 if (Lists.HostelList[i].Name == name)
                 {
@@ -44,6 +45,17 @@ namespace classes
             if(result==null)
             {
                 Console.WriteLine("Hostel Not Found");
+                Console.WriteLine("Press Any Button ");
+                Console.ReadKey();
+
+                HostelMainMenu = true;
+
+                while (HostelMainMenu)
+                {
+
+                    Program.MainMenu(ref HostelMainMenu);
+
+                }
             }
             return result;
         }
