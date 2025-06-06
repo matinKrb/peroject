@@ -60,8 +60,8 @@ namespace classes
                 }
             }
         }
-        public List<Equipment> RoomEq { get; set; }
-        public List<Student> RoomSt { get; set; }
+        public List<Equipment> RoomEq { get; set; } = new List<Equipment>();
+        public List<Student> RoomSt { get; set; } = new List<Student>();
         public Block RoomBlock { get; set; }
 
         public Room(int roomNum, int roomFloor, int capacity, List<Equipment> roomEq, List<Student> roomSt, Block roomBlock)
