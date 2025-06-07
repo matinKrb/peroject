@@ -155,18 +155,18 @@ namespace classes
             Console.WriteLine("Now You Should Chosse Block From The List Below ");
             for (int i = 0; i < FoundHostel.BlockList.Count; i++)
             {
-                Console.WriteLine($"{i+1}:{FoundHostel.BlockList[i].BlockName}");
+                Console.WriteLine($"{i + 1}:{FoundHostel.BlockList[i].BlockName}");
                 Console.WriteLine();
             }
 
             Console.Write("Please Enter The Block Name Wich You Wanna Manage Its Equipment :");
             string BlockName = Console.ReadLine();
-            
+
             Block FoundBlock = Block.FindBlockByName(BlockName, FoundHostel);
             Console.WriteLine("Now You Should Chosse Room From The List Below ");
             for (int i = 0; i < FoundBlock.BlockRoomsList.Count; i++)
             {
-                Console.WriteLine($"{i+1}:Room {FoundBlock.BlockRoomsList[i].roomNum}");
+                Console.WriteLine($"{i + 1}:Room {FoundBlock.BlockRoomsList[i].roomNum}");
                 Console.WriteLine();
             }
             Console.WriteLine('\n');
@@ -191,11 +191,11 @@ namespace classes
 
                 }
             }
-            Room FoundRoom = Room.FindRoomByRoomNumber(RoomNum,FoundBlock);
+            Room FoundRoom = Room.FindRoomByRoomNumber(RoomNum, FoundBlock);
             Console.WriteLine('\n');
             Console.WriteLine("Now You Should Chosse Equipments From The List Below ");
             Console.WriteLine('\n');
-            
+
             for (int j = 0; j < Lists.EquipmentsList.Count; j++)
             {
                 Console.WriteLine($"{j + 1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
@@ -236,7 +236,7 @@ namespace classes
                 FoundRoom.RoomEq.Add(FindEquipmentByPropNum(ClosetPropNum));
 
             }
-            
+
             Console.WriteLine('\n');
             Console.WriteLine($"Equipments Successfuly Allocated To Room {FoundRoom.roomNum}");
             Console.WriteLine("Press Any Button!");
@@ -314,12 +314,14 @@ namespace classes
 
             Console.WriteLine('\n');
             Console.WriteLine($"Equipments Successfuly Allocated To {OwnerStudent.Name} {OwnerStudent.Family}");
+            Console.WriteLine("Press Any Button");
+            Console.ReadKey();
         }
 
 
 
 
-//******************************************************************
+        //******************************************************************
         public static void ManagingTheMovementOfEquipment()
         {
             Console.Clear();
@@ -459,7 +461,7 @@ namespace classes
             string SecondBlockName = Console.ReadLine();
             Block SecondBlock = Block.FindBlockByName(SecondBlockName, SecondHostel);
 
-           
+
             Console.Clear();
             Console.WriteLine("And Finally You Should Choose Second Room From The List Below:");
             Console.WriteLine('\n');
@@ -536,7 +538,7 @@ namespace classes
 
         }
 
-        public static void EquipmentsReplacment(string FirstPropNum , string SecondPropNum) 
+        public static void EquipmentsReplacment(string FirstPropNum, string SecondPropNum)
         {
             Equipment FirstEquipment = FindEquipmentByPropNum(FirstPropNum);
             Equipment SecondEquipment = FindEquipmentByPropNum(SecondPropNum);
@@ -609,9 +611,9 @@ namespace classes
             Console.WriteLine('\n');
             Console.WriteLine("Equipments Of First Student List:");
             Console.WriteLine('\n');
-            for (int i = 0; i <FirstStudent.StEquipment.Count ; i++) 
+            for (int i = 0; i < FirstStudent.StEquipment.Count; i++)
             {
-                Console.WriteLine($"{i+1}: Type: {FirstStudent.StEquipment[i].EqType} , PropNumber: {FirstStudent.StEquipment[i].PropNum}");
+                Console.WriteLine($"{i + 1}: Type: {FirstStudent.StEquipment[i].EqType} , PropNumber: {FirstStudent.StEquipment[i].PropNum}");
             }
 
             Console.WriteLine('\n');
@@ -651,6 +653,7 @@ namespace classes
             Console.WriteLine("1: Add Fixing Request Through Part Number ");
             Console.WriteLine("2: Tracking The Status Of Fixing");
             Console.WriteLine("3: Add Defective Equipment");
+            Console.WriteLine("4: Change The Status Of Fixed Equipment");
             Console.WriteLine('\n');
             Console.Write("Please Enter Number Of Option :");
             int EquipmenFixingManagmentNumberOption = 0;
@@ -686,19 +689,294 @@ namespace classes
                 case 3:
                     AddDefectiveEquipment();
                     break;
+                case 4:
+                    ChangeTheStatusOfFixedEquipment();
+                    break;
             }
         }
+        //*****************************************************************************
         public static void AddFixingRequestThroughPartNumber()
         {
             Console.Clear();
+            if (Lists.DefectiveEquipment.Count > 0)
+            {
+
+                Console.WriteLine("Please Enter Any Button To Show Defective Equipment List !");
+                Console.ReadKey();
+                for (int j = 0; j < Lists.DefectiveEquipment.Count; j++)
+                {
+                    Console.WriteLine($"{j + 1}: {Lists.DefectiveEquipment[j].EqType} , {Lists.DefectiveEquipment[j].PartNumber} , {Lists.DefectiveEquipment[j].PropNum} ");
+                }
+
+                Console.Write("Please Enter The Prop Number Of Equipment Wich You Wanna Request For Fixing :");
+                string FixingEquipmentPropNum = Console.ReadLine();
+                Equipment FoundFixingEquipmentPropNum = FindDefectiveEquipmentByPropNum(FixingEquipmentPropNum);
+                Lists.FixingEquipments.Add(FoundFixingEquipmentPropNum);
+                FoundFixingEquipmentPropNum.Status = "Fixing";
+                Lists.DefectiveEquipment.Remove(FoundFixingEquipmentPropNum);
+                Console.WriteLine('\n');
+                Console.WriteLine("Your Request Register Is Successfuly");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("The List Of Defective Equipment Is Empty!");
+                Console.WriteLine("Press Any Button ");
+                Console.ReadKey();
+
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
         }
+
+        //*************************************************************
         public static void TrackingTheStatusOfFixing()
         {
             Console.Clear();
+            if (Lists.FixingEquipments.Count > 0 || Lists.DefectiveEquipment.Count > 0)
+            {
+                Console.WriteLine("Please Enter Any Button To Show Equipment List !");
+                Console.ReadKey();
+                int k = 1;
+                for (int j = 0; j < Lists.FixingEquipments.Count; j++)
+                {
+                    Console.WriteLine($"{k}: {Lists.FixingEquipments[j].EqType} , {Lists.FixingEquipments[j].PartNumber} , {Lists.FixingEquipments[j].PropNum} ");
+                    k++;
+                }
+
+                for (int j = 0; j < Lists.DefectiveEquipment.Count; j++)
+                {
+                    Console.WriteLine($"{k}: {Lists.DefectiveEquipment[j].EqType} , {Lists.DefectiveEquipment[j].PartNumber} , {Lists.DefectiveEquipment[j].PropNum} ");
+                    k++;
+                }
+                Console.WriteLine('\n');
+                Console.Write("Please Enter The Prop Number Of Equipment Wich You Wanna Track Its Fixing Status :");
+                string TrackFixingEquipmentPropNum = Console.ReadLine();
+                Console.WriteLine('\n');
+
+                Equipment TrackFoundFixingEquipment = FindDFixingEquipmentByPropNum(TrackFixingEquipmentPropNum);
+                if (TrackFoundFixingEquipment == null)
+                {
+                    Equipment TrackFoundDefectiveEquipment = FindDefectiveEquipmentByPropNum(TrackFixingEquipmentPropNum);
+                    if (TrackFoundDefectiveEquipment.Status == "Fixing" && TrackFoundFixingEquipment != null)
+                    {
+                        Console.WriteLine("The Equipment Is Being Fixing");
+                    }
+                    else if (TrackFoundDefectiveEquipment.Status == "Intact" && TrackFoundFixingEquipment != null)
+                    {
+                        Console.WriteLine("The Equipment Is Intact");
+                    }
+                    else if (TrackFoundDefectiveEquipment.Status == "Defective")
+                    {
+                        Console.WriteLine("The Equipment Is Defective");
+                    }
+                }
+                else
+                {
+
+                    Console.WriteLine('\n');
+                    if (TrackFoundFixingEquipment.Status == "Fixing")
+                    {
+                        Console.WriteLine("The Equipment Is Being Fixing");
+                    }
+                    else if (TrackFoundFixingEquipment.Status == "Intact")
+                    {
+                        Console.WriteLine("The Equipment Is Intact");
+                    }
+                    else if (TrackFoundFixingEquipment.Status == "Defective")
+                    {
+                        Console.WriteLine("The Equipment Is Defective");
+                    }
+                }
+                Console.WriteLine('\n');
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("The List Of Fixing Equipment Is Empty!");
+                Console.WriteLine("Press Any Button ");
+                Console.ReadKey();
+
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
         }
+
+        //***********************************************************************8
         public static void AddDefectiveEquipment()
         {
             Console.Clear();
+            if (Lists.EquipmentsList.Count > 0)
+            {
+                Console.WriteLine("Please Enter Any Button To Show Equipment List !");
+                Console.ReadKey();
+                for (int j = 0; j < Lists.EquipmentsList.Count; j++)
+                {
+                    Console.WriteLine($"{j + 1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
+                }
+                Console.WriteLine('\n');
+                Console.Write("Please Enter The Prop Number Of Equipment Wich Is Defective :");
+                string FoundEquipmentPropNum = Console.ReadLine();
+                Equipment FoundDefectiveEquipment = FindEquipmentByPropNum(FoundEquipmentPropNum);
+                Lists.DefectiveEquipment.Add(FoundDefectiveEquipment);
+
+                FoundDefectiveEquipment.Status = "Defective";
+                Console.WriteLine('\n');
+                Console.WriteLine("Register Equipment Was Successfuly");
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("The List Of Equipment Is Empty!");
+                Console.WriteLine("Press Any Button ");
+                Console.ReadKey();
+
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
         }
+
+        //***********************************************************************
+        public static Equipment FindDefectiveEquipmentByPropNum(string propnum)
+        {
+            Equipment Result = null;
+            for (int i = 0; i < Lists.DefectiveEquipment.Count; i++)
+            {
+                if (Lists.DefectiveEquipment[i].PropNum == propnum)
+                {
+                    Result = Lists.DefectiveEquipment[i];
+                }
+
+            }
+            if (Result == null)
+            {
+                {
+                    Console.WriteLine("Equipment Not Found!");
+                    Console.WriteLine("Press Any Button ");
+                    Console.ReadKey();
+
+                    Equipmentmanagment = true;
+
+                    while (Equipmentmanagment)
+                    {
+
+                        Program.MainMenu(ref Equipmentmanagment);
+
+                    }
+                }
+            }
+            return Result;
+
+        }
+
+        //**********************************************************************************
+        public static Equipment FindDFixingEquipmentByPropNum(string propnum)
+        {
+            Equipment Result = null;
+            for (int i = 0; i < Lists.FixingEquipments.Count; i++)
+            {
+                if (Lists.FixingEquipments[i].PropNum == propnum)
+                {
+                    Result = Lists.FixingEquipments[i];
+                }
+
+            }
+
+            return Result;
+
+        }
+        //**********************************************************************************************
+        public static void ChangeTheStatusOfFixedEquipment()
+        {
+            Console.Clear();
+            if (Lists.FixingEquipments.Count > 0)
+            {
+                Console.WriteLine("Please Enter Any Button To Show Fixing Equipment List !");
+                Console.ReadKey();
+                for (int j = 0; j < Lists.FixingEquipments.Count; j++)
+                {
+                    Console.WriteLine($"{j + 1}: {Lists.FixingEquipments[j].EqType} , {Lists.FixingEquipments[j].PartNumber} , {Lists.FixingEquipments[j].PropNum} ");
+                }
+                Console.WriteLine('\n');
+                Console.Write("Please Enter The Prop Number Of Equipment Wich You Wanna To Change Its Status : ");
+                string ChangeStatusEquipmentPropNum = Console.ReadLine();
+                Equipment FoundedChangeStatusEquipmentPropNum = FindDFixingEquipmentByPropNumBaVogodelse(ChangeStatusEquipmentPropNum);
+                FoundedChangeStatusEquipmentPropNum.Status = "Intact";
+                Console.WriteLine("Change Of Equipment Status Is Successfuly");
+            }
+            else
+            {
+                Console.WriteLine("The List Of Fixing Equipment Is Empty!");
+                Console.WriteLine("Press Any Button ");
+                Console.ReadKey();
+
+                Equipmentmanagment = true;
+
+                while (Equipmentmanagment)
+                {
+
+                    Program.MainMenu(ref Equipmentmanagment);
+
+                }
+            }
+            Console.WriteLine('\n');
+            Console.WriteLine("Perss Any Button");
+            Console.ReadKey();
+        }
+
+        //**************************************************************************
+        public static Equipment FindDFixingEquipmentByPropNumBaVogodelse(string propnum)
+        {
+            Equipment Result = null;
+            for (int i = 0; i < Lists.FixingEquipments.Count; i++)
+            {
+                if (Lists.FixingEquipments[i].PropNum == propnum)
+                {
+                    Result = Lists.FixingEquipments[i];
+                }
+
+            }
+            if (Result == null)
+            {
+                {
+                    Console.WriteLine("Equipment Not Found!");
+                    Console.WriteLine("Press Any Button ");
+                    Console.ReadKey();
+
+                    Equipmentmanagment = true;
+
+                    while (Equipmentmanagment)
+                    {
+
+                        Program.MainMenu(ref Equipmentmanagment);
+
+                    }
+                }
+            }
+            return Result;
+
+        }
+
     }
 }
