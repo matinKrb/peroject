@@ -40,3 +40,10 @@ C:\Users\youse\Desktop\Test\ConsoleApp2\peroject\peroject\classes\obj\Debug\clas
 C:\Users\youse\Desktop\Test\ConsoleApp2\peroject\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
 C:\Users\youse\Desktop\Test\ConsoleApp2\peroject\peroject\classes\obj\Debug\classes.exe
 C:\Users\youse\Desktop\Test\ConsoleApp2\peroject\peroject\classes\obj\Debug\classes.pdb
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\bin\Debug\classes.exe.config
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\bin\Debug\classes.exe
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\bin\Debug\classes.pdb
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\obj\Debug\classes.csproj.AssemblyReference.cache
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\obj\Debug\classes.csproj.CoreCompileInputs.cache
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\obj\Debug\classes.exe
+C:\Users\MC.co\Documents\GitHub\peroject\peroject\classes\obj\Debug\classes.pdb
