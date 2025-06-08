@@ -107,7 +107,7 @@ namespace classes
             }
             else
             {
-                Console.WriteLine("List Is Empty!");
+                Console.WriteLine("List Of Hostel Manager Is Empty!");
             }
 
 

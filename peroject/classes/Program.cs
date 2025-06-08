@@ -14,15 +14,11 @@ namespace classes
        
         static void Main(string[] args)
         {
-            
-
-
             Console.WriteLine("Welcome To Hostel Managing Application ");
             Console.WriteLine("_______________________________________");
             Console.WriteLine('\n');
 
             LoginPage();
-
         }
         public static void LoginPage() 
         {
@@ -55,7 +51,7 @@ namespace classes
                         string fusrename = Console.ReadLine();
 
                         Console.Write("Please Enter Your Password :");
-                        int fpaasword = int.Parse(Console.ReadLine());
+                        string fpaasword = Console.ReadLine();
 
                         foreach (var item in Lists.UserList)
                         {
@@ -98,6 +94,9 @@ namespace classes
                         catch (Exception ex)
                         {
                             Console.WriteLine(ex.Message);
+                            Console.WriteLine("Press Any Button");
+                            Console.ReadKey();
+                            LoginPage();
                         }
                         Console.Write("please Enter Your PhoneNumber :");
                         string phonenumber = Console.ReadLine();
@@ -106,16 +105,7 @@ namespace classes
                         Console.Write("Please Enter Your UserName :");
                         string username = Console.ReadLine();
                         Console.Write("please Enter Your Password :");
-                        int password = 0;
-
-                        try
-                        {
-                            password = int.Parse(Console.ReadLine());
-                        }
-                        catch (Exception ex)
-                        {
-                            Console.WriteLine(ex.Message);
-                        }
+                        string password = Console.ReadLine();
 
                         Person NewPerson = new Person(Name, Family, nationalcode, phonenumber, address);
                         user NewUser = new user(username, password);
@@ -135,7 +125,7 @@ namespace classes
                         string Fusrename = Console.ReadLine();
 
                         Console.Write("Please Enter Your Password :");
-                        int Fpaasword = int.Parse(Console.ReadLine());
+                        string Fpaasword = Console.ReadLine();
 
                         foreach (var item in Lists.UserList)
                         {

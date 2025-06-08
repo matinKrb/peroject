@@ -10,9 +10,9 @@ namespace classes
     {
 
         public string _Username;
-        public int _Password;
+        public string _Password;
 
-        public user(string username , int password)
+        public user(string username , string password)
         {
             _Username = username;
             _Password = password;

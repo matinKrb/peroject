@@ -10,21 +10,29 @@ namespace classes
     {
         public static bool StudentMainMenu = true;
 
-        public long StudentId {  get; set; }
-        //{
-        //    //get { return StudentId; }
-        //    //set
-        //    //{
-        //    //    if (value >= 100000000 && value < 1000000000)
-        //    //   {
-        //    //        StudentId= value;
-        //    //    }
-        //    //    else
-        //    //    {
-        //    //        Console.WriteLine("Invalid Student ID!");
-        //    //    }
-        //    //}
-        //}
+        public int DayOfAccommodationHostory = 0;
+        public int MonthOfAccommodationHostory = 0;
+        public int YearOfAccommodationHostory = 0;
+        private long studentId;
+        public long StudentId
+        {
+            get { return studentId; }
+            set
+            {
+                if (value >= 100000000 && value < 1000000000)
+                {
+                    studentId = value;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Student ID!");
+                    Console.WriteLine("Press Any Butten");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Program.MainMenu(ref StudentMainMenu);
+                }
+            }
+        }
         public Room StRoom { get; set; }
         public Block StBlock { get; set; }
         public Hostel StHostel { get; set; }
@@ -49,10 +57,6 @@ namespace classes
             StRoom = stRoom;
             StBlock = stBlock;
             StHostel = stHostel;
-        }
-        public void SignUp()
-        {
-
         }
         public static Student FindStudentByName(string family)
         {

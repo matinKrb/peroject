@@ -10,6 +10,7 @@ namespace classes
 {
     public class StudentManagement
     {
+        public static int NumberOFRegisteredStudent = 0;
         public static bool StudentManagmentMainMenu = true;
 
         public static void DisplayStudentManagmentMenu()
@@ -458,10 +459,10 @@ namespace classes
                         if (StudentToRegister.StBlock.BlockRoomsList.Count>0)
                         {
                             Console.Clear();
-                            Console.WriteLine("List Of Rooms From This Block :");
+                            Console.WriteLine("List Of Rooms From This Block With Capacity :");
                             for (int i = 0; i < StudentToRegister.StBlock.BlockRoomsList.Count; i++)
                             {
-                                Console.WriteLine($"{i+1} : Room {StudentToRegister.StBlock.BlockRoomsList[i].roomNum}");
+                                Console.WriteLine($"{i+1} : Room {StudentToRegister.StBlock.BlockRoomsList[i].roomNum} , Remaining Capacity : {StudentToRegister.StBlock.BlockRoomsList[i].capacity}");
                             }
                             Console.WriteLine('\n');
                             Console.Write("Please Enter The Room Number Wich You Want To Register Student At :");
@@ -487,15 +488,106 @@ namespace classes
                             }
 
                             StudentToRegister.StRoom = Room.FindRoomByRoomNumber(RoomNumberToRegister, StudentToRegister.StBlock);
+                            if (StudentToRegister.StRoom.capacity>0)
+                            {
 
-                            Console.WriteLine("Registering Room Successfuly");
-                            Console.WriteLine("Press Any Button");
-                            Console.ReadKey();
-                            Console.Clear();
-                            Console.WriteLine("Registering Successfuly");
-                            Console.WriteLine("Press Any Button");
-                            Console.ReadKey();
+                                Console.WriteLine("Registering Room Successfuly");
+                                Console.WriteLine("Press Any Button To Specify The Registration Date");
+                                Console.ReadKey();
+                                Console.Clear();
+                                Console.Write("Please Enter The Year Of Registration :");
 
+                                int Year = 0;
+
+                                try
+                                {
+                                    Year = int.Parse(Console.ReadLine());
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine(ex.Message);
+                                    Console.WriteLine("Press Any Button");
+                                    Console.ReadKey();
+                                    StudentManagmentMainMenu = true;
+
+                                    while (StudentManagmentMainMenu)
+                                    {
+
+                                        Program.MainMenu(ref StudentManagmentMainMenu);
+
+                                    }
+                                }
+                                StudentToRegister.YearOfAccommodationHostory = Year;
+                                Console.WriteLine('\n');
+                                Console.Write("Please Enter The Month Of Registration :");
+
+                                int Month = 0;
+
+                                try
+                                {
+                                    Month = int.Parse(Console.ReadLine());
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine(ex.Message);
+                                    Console.WriteLine("Press Any Button");
+                                    Console.ReadKey();
+                                    StudentManagmentMainMenu = true;
+
+                                    while (StudentManagmentMainMenu)
+                                    {
+
+                                        Program.MainMenu(ref StudentManagmentMainMenu);
+
+                                    }
+                                }
+                                StudentToRegister.MonthOfAccommodationHostory = Month;
+                                Console.WriteLine('\n');
+                                Console.Write("Please Enter The Day Of Registration :");
+
+                                int Day = 0;
+
+                                try
+                                {
+                                    Day = int.Parse(Console.ReadLine());
+                                }
+                                catch (Exception ex)
+                                {
+                                    Console.WriteLine(ex.Message);
+                                    Console.WriteLine("Press Any Button");
+                                    Console.ReadKey();
+                                    StudentManagmentMainMenu = true;
+
+                                    while (StudentManagmentMainMenu)
+                                    {
+
+                                        Program.MainMenu(ref StudentManagmentMainMenu);
+
+                                    }
+                                }
+                                StudentToRegister.DayOfAccommodationHostory = Day;
+
+                                Console.WriteLine('\n');
+                                Console.WriteLine("Specifying The Registration Date Successfuly");
+                                Console.WriteLine("Press Any Button");
+                                Console.ReadKey();
+
+                                Lists.RegisteredStudent.Add(StudentToRegister);
+                                NumberOFRegisteredStudent++;
+                                StudentToRegister.StHostel.Capacity--;
+                                StudentToRegister.StRoom.capacity--;
+
+
+                                Console.Clear();
+                                Console.WriteLine("Registering Successfuly");
+                                Console.WriteLine("Press Any Button");
+                                Console.ReadKey();
+
+                            }
+                            else
+                            {
+                                Console.WriteLine("This Room Has No Capacity !");
+                            }
                         }
                         else
                         {
@@ -666,7 +758,7 @@ namespace classes
         public static void DisplayAllInfoStudent()
         {
             Console.Clear();
-            if (Lists.StudentList.Count > 0)
+            if (Lists.RegisteredStudent.Count > 0)
             {
                 Console.Write("Please Enter The Student Id Who You Want To Display His Information :");
                 long StudentIdToDisplay = 0;
@@ -715,7 +807,7 @@ namespace classes
             }
             else
             {
-                Console.WriteLine("There Is No Student To Display!");
+                Console.WriteLine("Please Register Student In The Hostel First");
                 Console.WriteLine("Press Any Button");
                 Console.ReadKey();
             }

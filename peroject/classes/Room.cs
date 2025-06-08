@@ -24,6 +24,9 @@ namespace classes
                 else
                 {
                     Console.WriteLine("Invalid RoomNum!");
+                    Console.WriteLine("Press Any Butten");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
             }
         }
@@ -41,6 +44,9 @@ namespace classes
                 else
                 {
                     Console.WriteLine("Invalid RoomFloor!");
+                    Console.WriteLine("Press Any Butten");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
             }
         }
@@ -57,6 +63,9 @@ namespace classes
                 else
                 {
                     Console.WriteLine("Invalid Capacity!");
+                    Console.WriteLine("Press Any Butten");
+                    Console.ReadKey();
+                    Console.Clear();
                 }
             }
         }

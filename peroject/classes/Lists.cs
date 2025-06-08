@@ -14,7 +14,6 @@ namespace classes
 
         public static List<Hostel> HostelList = new List<Hostel>();
 
-
         public static List<HostelManager> HostelManagerList = new List<HostelManager>();
 
         public static List<Student> StudentList = new List<Student>();  
@@ -26,6 +25,8 @@ namespace classes
         public static List<Equipment> DefectiveEquipment = new List<Equipment>();
         
         public static List<Equipment> FixingEquipments = new List<Equipment>();
+
+        public static List<Student> RegisteredStudent = new List<Student>();
 
         
 

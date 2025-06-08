@@ -16,21 +16,27 @@ namespace classes
 
         private string _phoneNumber;
 
-        public string PhoneNumber { get; set; }
-        //{
-        //    get { return _phoneNumber; }
-        //    set
-        //    {
-        //        if (value.Length == 11)
-        //        {
-        //            _phoneNumber = value;
-        //        }
-        //        else
-        //        {
-        //            Console.WriteLine("Invalid Phone Number!");
-        //        }
-        //    }
-        //}
+        public string PhoneNumber
+        {
+            get { return _phoneNumber; }
+            set
+            {
+                if (value.Length == 11)
+                {
+                    _phoneNumber = value;
+                }
+                else
+                {
+                    Console.WriteLine("Invalid Phone Number!");
+                    Console.WriteLine("Press Any Butten");
+                    Console.ReadKey();
+                    Console.Clear();
+                    Program.LoginPage();
+                }
+            }
+        }
+
+
         public string Addres { get; set; }
 
         public Person(string name, string family, long nationalCode, string phoneNumber, string addres)
