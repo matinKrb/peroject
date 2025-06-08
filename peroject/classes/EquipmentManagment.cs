@@ -700,6 +700,27 @@ namespace classes
             Console.Clear();
             if (Lists.DefectiveEquipment.Count > 0)
             {
+                Console.Write("Please Enter Your Student Id :");
+                long FixingRequestStudentId = 0;
+
+                try
+                {
+                    FixingRequestStudentId = Convert.ToInt64(Console.ReadLine());
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                    Equipmentmanagment = true;
+
+                    while (Equipmentmanagment)
+                    {
+
+                        Program.MainMenu(ref Equipmentmanagment);
+
+                    }
+                }
 
                 Console.WriteLine("Please Enter Any Button To Show Defective Equipment List !");
                 Console.ReadKey();
@@ -714,6 +735,9 @@ namespace classes
                 Lists.FixingEquipments.Add(FoundFixingEquipmentPropNum);
                 FoundFixingEquipmentPropNum.Status = "Fixing";
                 Lists.DefectiveEquipment.Remove(FoundFixingEquipmentPropNum);
+                Student FoundedStudentRequst = Student.FindStudentByStudentId(FixingRequestStudentId);
+                ReportFixingRequest NewRequste = new ReportFixingRequest(FoundedStudentRequst, FoundFixingEquipmentPropNum);
+                Lists.reportFixingRequestsList.Add(NewRequste);
                 Console.WriteLine('\n');
                 Console.WriteLine("Your Request Register Is Successfuly");
                 Console.WriteLine("Press Any Button");

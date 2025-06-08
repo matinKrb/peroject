@@ -67,14 +67,12 @@ namespace classes
 
                                 }
                             }
-                            else
-                            {
-                                Console.WriteLine("Incorect UserName Or Password");
-                                Console.WriteLine("Press Any Butten");
-                                Console.ReadKey();
-                                Console.Clear();
-                            }
+                            
                         }
+                        Console.WriteLine("Incorrect UserName Or Password");
+                        Console.WriteLine("Press Any Butten");
+                        Console.ReadKey();
+                        Console.Clear();
 
 
 
@@ -141,14 +139,12 @@ namespace classes
 
                                 }
                             }
-                            else
-                            {
-                                Console.WriteLine("Incorect UserName Or Password");
-                                Console.WriteLine("Press Any Butten");
-                                Console.ReadKey();
-                                Console.Clear();
-                            }
+                            
                         }
+                        Console.WriteLine("Incorrect UserName Or Password");
+                        Console.WriteLine("Press Any Butten");
+                        Console.ReadKey();
+                        Console.Clear();
 
                         break;
                     default:

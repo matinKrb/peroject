@@ -40,11 +40,28 @@ namespace classes
                     break;
             }
         }
-
+        
         public static void ReportFixRequest()
         {
             Console.Clear();
-
+            if (Lists.reportFixingRequestsList.Count>0)
+            {
+                Console.WriteLine("Please Enter Any Button To Display Fixing Request List !");
+                Console.ReadKey();
+                Console.WriteLine('\n');
+                for (int i = 0; i < Lists.reportFixingRequestsList.Count; i++)
+                {
+                    Console.WriteLine($"Student {Lists.reportFixingRequestsList[i].RequestfixingStudent.Name} {Lists.reportFixingRequestsList[i].RequestfixingStudent.Family} With Student Id {Lists.reportFixingRequestsList[i].RequestfixingStudent.StudentId} Has Requested For Fixing Equipment {Lists.reportFixingRequestsList[i].FixingEquipment.EqType} With Prop Number {Lists.reportFixingRequestsList[i].FixingEquipment.PropNum}" );
+                }
+                Console.WriteLine("Press Any Button");
+                Console.ReadKey();
+            }
+            else
+            {
+                Console.WriteLine("The List Of Fixing Equipment Is Empty!");
+                Console.WriteLine("Press any Button");
+                Console.ReadKey();
+            }
         }
 
         public static void StudentAccommodationHostoryReport()
