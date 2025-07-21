@@ -28,7 +28,7 @@ namespace classes
 
         public static List<Student> RegisteredStudent = new List<Student>();
 
-        
+        public static List<ReportFixingRequest> reportFixingRequestsList = new List<ReportFixingRequest>();
 
     }
 }
