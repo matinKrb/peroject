@@ -257,6 +257,7 @@ namespace classes
             if (Lists.HostelManagerList.Count>0)
             {
                 Console.WriteLine("List Of Hostel Managers:");
+                Console.WriteLine("\n");
                 for (int i = 0; i < Lists.HostelManagerList.Count; i++)
                 {
                     Console.WriteLine($"{i + 1} :Name: {Lists.HostelManagerList[i].Name} Family: {Lists.HostelManagerList[i].Family} National Code: {Lists.HostelManagerList[i].NationalCode} Position: {Lists.HostelManagerList[i].Position} Phone Number: {Lists.HostelManagerList[i].PhoneNumber} Address: {Lists.HostelManagerList[i].Addres}");
