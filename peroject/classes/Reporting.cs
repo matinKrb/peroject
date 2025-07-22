@@ -11,7 +11,7 @@ namespace classes
         public static void ReportingMenu()
         {
             Console.Clear();
-            Console.WriteLine("1 : Accommodation Status Report");
+            Console.WriteLine("1 : Accommodation Status Report :");
             Console.WriteLine("2 : Equipment Report :");
             Console.WriteLine("3 : Specializad Report :");
             Console.WriteLine('\n');
