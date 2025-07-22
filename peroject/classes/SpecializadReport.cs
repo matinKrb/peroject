@@ -66,6 +66,7 @@ namespace classes
 
         public static void StudentAccommodationHostoryReport()
         {
+
             Console.Clear();
             if (StudentManagement.NumberOFRegisteredStudent > 0)
             {
@@ -87,6 +88,7 @@ namespace classes
                 Console.WriteLine("Press any Button");
                 Console.ReadKey();
             }
+
         }
 
     }
