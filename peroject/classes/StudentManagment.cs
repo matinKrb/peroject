@@ -358,7 +358,10 @@ namespace classes
                 Console.WriteLine($"Name Is :{FindedStudent.Name} , Family Is : {FindedStudent.Family} , Student ID Is : {FindedStudent.StudentId} , National Code Is : {FindedStudent.NationalCode} , Phone Number Is : {FindedStudent.PhoneNumber} , Address Is : {FindedStudent.Addres}");
                 Console.WriteLine("Press Any Button!");
             }
-            
+            Console.WriteLine('\n');
+            Console.WriteLine("Press Any Key");
+            Console.ReadKey();
+
 
         }
         public static void FindStudentByStudentId()
@@ -389,6 +392,10 @@ namespace classes
             {
                 Console.WriteLine($"Name Is :{FindedStudentByID.Name} , Family Is : {FindedStudentByID.Family} , Student ID Is : {FindedStudentByID.StudentId} , National Code Is : {FindedStudentByID.NationalCode} , Phone Number Is : {FindedStudentByID.PhoneNumber} , Address Is : {FindedStudentByID.Addres}");
             }
+            Console.WriteLine('\n');
+            Console.WriteLine("Press Any Key");
+            Console.ReadKey();
+
         }
 
 
