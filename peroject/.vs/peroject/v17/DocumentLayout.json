@@ -1,9 +1,17 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\",
+  "WorkspaceRootPath": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\matin\\desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\specializadreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\specializadreport.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|c:\\users\\mc.co\\documents\\github\\peroject\\peroject\\classes\\equipmentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\equipmentmanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{59A5F200-E184-4065-804E-E0CEF7104CB9}|classes\\classes.csproj|solutionrelative:classes\\hostelmanagermanagment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,34 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 62,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HostelManagerManagment.cs",
-              "DocumentMoniker": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
-              "RelativeDocumentMoniker": "classes\\HostelManagerManagment.cs",
-              "ToolTip": "C:\\Users\\Matin\\Desktop\\dddddddddddddddddddd\\peroject1\\peroject\\classes\\HostelManagerManagment.cs",
-              "RelativeToolTip": "classes\\HostelManagerManagment.cs",
-              "ViewState": "AgIAAPQAAAAAAAAAAAAkwAMBAAAlAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "EquipmentManagment.cs",
+              "DocumentMoniker": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\EquipmentManagment.cs",
+              "RelativeDocumentMoniker": "classes\\EquipmentManagment.cs",
+              "ToolTip": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\EquipmentManagment.cs",
+              "RelativeToolTip": "classes\\EquipmentManagment.cs",
+              "ViewState": "AgIAAKEAAAAAAAAAAAAAAKUAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-07-21T13:38:44.097Z",
+              "WhenOpened": "2025-07-22T09:00:04.078Z",
               "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 62,
-          "SelectedChildIndex": -1,
-          "Children": [
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpecializadReport.cs",
+              "DocumentMoniker": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\SpecializadReport.cs",
+              "RelativeDocumentMoniker": "classes\\SpecializadReport.cs",
+              "ToolTip": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\SpecializadReport.cs",
+              "RelativeToolTip": "classes\\SpecializadReport.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAADwvzUAAACsAQAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T16:42:10.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HostelManagerManagment.cs",
+              "DocumentMoniker": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\HostelManagerManagment.cs",
+              "RelativeDocumentMoniker": "classes\\HostelManagerManagment.cs",
+              "ToolTip": "C:\\Users\\MC.co\\Documents\\GitHub\\peroject\\peroject\\classes\\HostelManagerManagment.cs",
+              "RelativeToolTip": "classes\\HostelManagerManagment.cs",
+              "ViewState": "AgIAAPcAAAAAAAAAAAAqwPsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-21T13:38:44.097Z"
             }
           ]
         }

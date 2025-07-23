@@ -152,7 +152,7 @@ namespace classes
             Console.Write("Please Enter The Hostel Name Wich You Wanna Manage Its Equipments :");
             string HostelName = Console.ReadLine();
             Hostel FoundHostel = Hostel.FindHostelByName(HostelName);
-            Console.WriteLine("Now You Should Chosse Block From The List Below ");
+            Console.WriteLine("Now You Should Choose Block From The List Below ");
             for (int i = 0; i < FoundHostel.BlockList.Count; i++)
             {
                 Console.WriteLine($"{i + 1}:{FoundHostel.BlockList[i].BlockName}");
