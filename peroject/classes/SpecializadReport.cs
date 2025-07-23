@@ -51,7 +51,8 @@ namespace classes
                 Console.WriteLine('\n');
                 for (int i = 0; i < Lists.reportFixingRequestsList.Count; i++)
                 {
-                    Console.WriteLine($"Student {Lists.reportFixingRequestsList[i].RequestfixingStudent.Name} {Lists.reportFixingRequestsList[i].RequestfixingStudent.Family} With Student Id {Lists.reportFixingRequestsList[i].RequestfixingStudent.StudentId} Has Requested For Fixing Equipment {Lists.reportFixingRequestsList[i].FixingEquipment.EqType} With Prop Number {Lists.reportFixingRequestsList[i].FixingEquipment.PropNum}" );
+                    Console.WriteLine($"{i+1} : Student {Lists.reportFixingRequestsList[i].RequestfixingStudent.Name} {Lists.reportFixingRequestsList[i].RequestfixingStudent.Family} With Student Id : {Lists.reportFixingRequestsList[i].RequestfixingStudent.StudentId} , Has Requested For Fixing Equipment : {Lists.reportFixingRequestsList[i].FixingEquipment.EqType} , With Prop Number : {Lists.reportFixingRequestsList[i].FixingEquipment.PropNum}" );
+                    Console.WriteLine('\n');
                 }
                 Console.WriteLine("Press Any Button");
                 Console.ReadKey();

@@ -208,9 +208,10 @@ namespace classes
             {
                 Console.WriteLine("Please Enter Any Button To Show Equipment List !");
                 Console.ReadKey();
+
                 for (int j = 0; j < FoundedRoom.RoomEq.Count; j++)
                 {
-                    Console.WriteLine($"{j + 1}: {Lists.EquipmentsList[j].EqType} , {Lists.EquipmentsList[j].PartNumber} , {Lists.EquipmentsList[j].PropNum} ");
+                    Console.WriteLine($"{j + 1}: {FoundedRoom.RoomEq[j].EqType} , {FoundedRoom.RoomEq[j].PartNumber} , {FoundedRoom.RoomEq[j].PropNum} ");
                 }
                 Console.WriteLine('\n');
                 Console.WriteLine("Press Any Button");

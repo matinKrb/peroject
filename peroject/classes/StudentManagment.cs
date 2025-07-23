@@ -691,7 +691,7 @@ namespace classes
                             Console.WriteLine("List Of Rooms From This Block :");
                             for (int i = 0; i < StudentToMove.StBlock.BlockRoomsList.Count; i++)
                             {
-                                Console.WriteLine($"{i + 1} : Room {StudentToMove.StBlock.BlockRoomsList[i].roomNum}");
+                                Console.WriteLine($"{i + 1} : Room {StudentToMove.StBlock.BlockRoomsList[i].roomNum} , Capacity : {StudentToMove.StBlock.BlockRoomsList[i].capacity}");
                             }
                             Console.WriteLine('\n');
                             Console.Write("Please Enter The Room Nuber Wich You Want To Transfer The Student To :");
