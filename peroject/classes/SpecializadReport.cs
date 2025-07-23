@@ -51,12 +51,12 @@ namespace classes
                 Console.WriteLine('\n');
                 for (int i = 0; i < Lists.reportFixingRequestsList.Count; i++)
                 {
-<<<<<<< HEAD
+
                     Console.WriteLine($"Student {Lists.reportFixingRequestsList[i].RequestfixingStudent.Name} {Lists.reportFixingRequestsList[i].RequestfixingStudent.Family} With Student Id {Lists.reportFixingRequestsList[i].RequestfixingStudent.StudentId} Has Requested For Fixing Equipment {Lists.reportFixingRequestsList[i].FixingEquipment.EqType} With Prop Number {Lists.reportFixingRequestsList[i].FixingEquipment.PropNum }  " );
-=======
+
                     Console.WriteLine($"{i+1} : Student {Lists.reportFixingRequestsList[i].RequestfixingStudent.Name} {Lists.reportFixingRequestsList[i].RequestfixingStudent.Family} With Student Id : {Lists.reportFixingRequestsList[i].RequestfixingStudent.StudentId} , Has Requested For Fixing Equipment : {Lists.reportFixingRequestsList[i].FixingEquipment.EqType} , With Prop Number : {Lists.reportFixingRequestsList[i].FixingEquipment.PropNum}" );
                     Console.WriteLine('\n');
->>>>>>> 99ee16ad67eb545d9a9e9f9103a2ffe331b30ebd
+
                 }
                 Console.WriteLine("Press Any Button");
                 Console.ReadKey();
@@ -75,7 +75,7 @@ namespace classes
             Console.Clear();
             if (StudentManagement.NumberOFRegisteredStudent > 0)
             {
-                Console.WriteLine("Press any Button To Display Student Accommodation Hostory");
+                Console.WriteLine("Press any Button To Display Student Accommodation History");
                 Console.ReadKey();
                 Console.Clear();
                 for (int i = 0; i < Lists.RegisteredStudent.Count; i++)

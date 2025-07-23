@@ -112,7 +112,7 @@ namespace classes
                     Lists.blockManagersList.Add(NewBlockManager);
 
                     Console.WriteLine('\n');
-                    Console.WriteLine("Block Manager Added Successfuly");
+                    Console.WriteLine("Block Manager Added Successfully");
                     Console.WriteLine("Press Any Button !");
                     Console.ReadKey();
 

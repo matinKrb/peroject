@@ -120,7 +120,7 @@ namespace classes
                 Hostel NewHostel = new Hostel(HostelName, HostelAddress, HostelCapacity, HostelManagerWhoToBeManager);
                 Lists.HostelList.Add(NewHostel);
                 Console.WriteLine('\n');
-                Console.WriteLine("Hostel Added Successfuly");
+                Console.WriteLine("Hostel Added Successfully");
             }
 
             Console.WriteLine("Press Any Button");
@@ -145,7 +145,7 @@ namespace classes
                 Console.WriteLine('\n');
                 if (HostelToRemove != null)
                 {
-                    Console.WriteLine("Hostel Removed Successfuly");
+                    Console.WriteLine("Hostel Removed Successfully");
                 }
             }
             else
@@ -245,7 +245,7 @@ namespace classes
                     Console.WriteLine('\n');
                     if (NewHostelManager != null)
                     {
-                        Console.WriteLine("Hostel Edited Successfuly");
+                        Console.WriteLine("Hostel Edited Successfully");
                     }
                 }
                 

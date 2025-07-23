@@ -17,7 +17,7 @@ namespace classes
             Console.WriteLine("2: Allocating Equipment To rooms ");
             Console.WriteLine("3: Allocating Equipment To Student ");
             Console.WriteLine("4: Managing The Movement Of Equipment ");
-            Console.WriteLine("5: Fixing Managment ");
+            Console.WriteLine("5: Fixing Management ");
             Console.WriteLine('\n');
             Console.Write("Please Enter Number Of Option :");
             int EquipmentNumberOption = 0;
@@ -95,7 +95,7 @@ namespace classes
             Equipment NewEquipment = new Equipment(Type, PartNumber, PropNum);
             EquipmentsCount++;
             Lists.EquipmentsList.Add(NewEquipment);
-            Console.WriteLine("Equipment Added Successfuly");
+            Console.WriteLine("Equipment Added Successfully");
             Console.WriteLine('\n');
 
 
@@ -163,7 +163,7 @@ namespace classes
             string BlockName = Console.ReadLine();
 
             Block FoundBlock = Block.FindBlockByName(BlockName, FoundHostel);
-            Console.WriteLine("Now You Should Chosse Room From The List Below ");
+            Console.WriteLine("Now You Should Choose Room From The List Below ");
             for (int i = 0; i < FoundBlock.BlockRoomsList.Count; i++)
             {
                 Console.WriteLine($"{i + 1}:Room {FoundBlock.BlockRoomsList[i].roomNum}");
@@ -193,7 +193,7 @@ namespace classes
             }
             Room FoundRoom = Room.FindRoomByRoomNumber(RoomNum, FoundBlock);
             Console.WriteLine('\n');
-            Console.WriteLine("Now You Should Chosse Equipments From The List Below ");
+            Console.WriteLine("Now You Should Choose Equipments From The List Below ");
             Console.WriteLine('\n');
 
             for (int j = 0; j < Lists.EquipmentsList.Count; j++)
@@ -238,7 +238,7 @@ namespace classes
             }
 
             Console.WriteLine('\n');
-            Console.WriteLine($"Equipments Successfuly Allocated To Room {FoundRoom.roomNum}");
+            Console.WriteLine($"Equipments Successfully Allocated To Room {FoundRoom.roomNum}");
             Console.WriteLine("Press Any Button!");
             Console.ReadKey();
         }
@@ -278,7 +278,7 @@ namespace classes
 
             Student OwnerStudent = Student.FindStudentByStudentId(StudentIdToFind);
 
-            Console.WriteLine("Now You Should Chosse Equipments From The List Below ");
+            Console.WriteLine("Now You Should Choose Equipments From The List Below ");
             Console.WriteLine('\n');
             for (int j = 0; j < Lists.EquipmentsList.Count; j++)
             {
@@ -313,7 +313,7 @@ namespace classes
 
 
             Console.WriteLine('\n');
-            Console.WriteLine($"Equipments Successfuly Allocated To {OwnerStudent.Name} {OwnerStudent.Family}");
+            Console.WriteLine($"Equipments Successfully Allocated To {OwnerStudent.Name} {OwnerStudent.Family}");
             Console.WriteLine("Press Any Button");
             Console.ReadKey();
         }
@@ -431,7 +431,7 @@ namespace classes
 
             Room FirstRoom = Room.FindRoomByRoomNumber(FirstRoomNum, FirstBlock);
             Console.WriteLine();
-            Console.WriteLine("First Room Successfuly Detected!");
+            Console.WriteLine("First Room Successfully Detected!");
 
             Console.Clear();
             Console.WriteLine("Now You should Choose The Hostel Of Second Room From The List Below:");
@@ -497,7 +497,7 @@ namespace classes
 
             Room SecondRoom = Room.FindRoomByRoomNumber(SecondRoomNum, SecondBlock);
             Console.WriteLine();
-            Console.WriteLine("Second Room Successfuly Detected!");
+            Console.WriteLine("Second Room Successfully Detected!");
             Console.WriteLine("Press Any Key To Continue");
             Console.ReadKey();
 
@@ -534,7 +534,7 @@ namespace classes
 
             EquipmentsReplacment(FirstPropNum, SecondPropNum);
             Console.WriteLine('\n');
-            Console.WriteLine("Equipments Replaced Successfuly");
+            Console.WriteLine("Equipments Replaced Successfully");
 
         }
 
@@ -639,7 +639,7 @@ namespace classes
             string SecondPropNum = Console.ReadLine();
 
             EquipmentsReplacment(FirstPropNum, SecondPropNum);
-            Console.WriteLine("Equipments Replaced Successfuly");
+            Console.WriteLine("Equipments Replaced Successfully");
 
         }
 
@@ -739,7 +739,7 @@ namespace classes
                 ReportFixingRequest NewRequste = new ReportFixingRequest(FoundedStudentRequst, FoundFixingEquipmentPropNum);
                 Lists.reportFixingRequestsList.Add(NewRequste);
                 Console.WriteLine('\n');
-                Console.WriteLine("Your Request Register Is Successfuly");
+                Console.WriteLine("Your Request Register Is Successfully");
                 Console.WriteLine("Press Any Button");
                 Console.ReadKey();
             }
@@ -860,7 +860,7 @@ namespace classes
 
                 FoundDefectiveEquipment.Status = "Defective";
                 Console.WriteLine('\n');
-                Console.WriteLine("Register Equipment Was Successfuly");
+                Console.WriteLine("Register Equipment Was Successfully");
                 Console.WriteLine("Press Any Button");
                 Console.ReadKey();
             }
@@ -947,7 +947,7 @@ namespace classes
                 string ChangeStatusEquipmentPropNum = Console.ReadLine();
                 Equipment FoundedChangeStatusEquipmentPropNum = FindDFixingEquipmentByPropNumBaVogodelse(ChangeStatusEquipmentPropNum);
                 FoundedChangeStatusEquipmentPropNum.Status = "Intact";
-                Console.WriteLine("Change Of Equipment Status Is Successfuly");
+                Console.WriteLine("Change Of Equipment Status Is Successfully");
             }
             else
             {

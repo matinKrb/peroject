@@ -98,7 +98,7 @@ namespace classes
             HostelManager NewHostelManager = new HostelManager(position,name , family , phonenumber , nationalcode , address );
             Lists.HostelManagerList.Add(NewHostelManager);
             Console.WriteLine('\n');
-            Console.WriteLine("Hostel Manager Added Successfuly");
+            Console.WriteLine("Hostel Manager Added Successfully");
             Console.WriteLine("Press Any Button");
             Console.ReadKey();
 
@@ -144,7 +144,7 @@ namespace classes
                 Console.WriteLine('\n');
                 if (HostelManagerToRemove != null)
                 {
-                    Console.WriteLine("Hostel Manager Removed Successfuly");
+                    Console.WriteLine("Hostel Manager Removed Successfully");
                 }
             }
             else
@@ -237,7 +237,7 @@ namespace classes
                     ToEditHostelManager.PhoneNumber = phonenumber;
                     ToEditHostelManager.Addres = address;
                     Console.WriteLine('\n');
-                    Console.WriteLine("Hostel Manager Edited Successfuly");
+                    Console.WriteLine("Hostel Manager Edited Successfully");
                 }
             }
             else

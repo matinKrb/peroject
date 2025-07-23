@@ -48,7 +48,7 @@ namespace classes
                 Console.WriteLine("1 : Add A New Block");
                 Console.WriteLine("2 : Remove A Block");
                 Console.WriteLine("3 : Edit A Block");
-                Console.WriteLine("4 : Displsy Blocks List Of This Hostel");
+                Console.WriteLine("4 : Display Blocks List Of This Hostel");
                 Console.WriteLine("5 : Manage Rooms");
                 Console.WriteLine("\n");
 
@@ -151,7 +151,7 @@ namespace classes
             if (Lists.blockManagersList.Count > 0)
             {
                 Console.WriteLine('\n');
-                Console.WriteLine("List Of Block Managers With Studet Id Is : ");
+                Console.WriteLine("List Of Block Managers With Student Id Is : ");
                 Console.WriteLine('\n');
 
                 for (int i = 0; i < Lists.blockManagersList.Count; i++)
@@ -187,7 +187,7 @@ namespace classes
 
                     choosenhostel.BlockList.Add(NewBlock);
                     Console.WriteLine('\n');
-                    Console.WriteLine("Block Added Successfuly");
+                    Console.WriteLine("Block Added Successfully");
                     Console.WriteLine("\n");
                     Console.WriteLine("Press Any Button!");
                     Console.ReadKey();
@@ -222,7 +222,7 @@ namespace classes
                 {
                     choosenhostel.BlockList.Remove(BlockToRemove);
 
-                    Console.WriteLine("Block Removed Successfuly");
+                    Console.WriteLine("Block Removed Successfully");
 
                 }
             }
@@ -300,7 +300,7 @@ namespace classes
                 if (Lists.blockManagersList.Count > 0)
                 {
                     Console.WriteLine('\n');
-                    Console.WriteLine("List Of Block Managers With Studet Id Is : ");
+                    Console.WriteLine("List Of Block Managers With Student Id Is : ");
                     Console.WriteLine('\n');
 
                     for (int i = 0; i < Lists.blockManagersList.Count; i++)
@@ -333,7 +333,7 @@ namespace classes
                         Block ReplacedBlock = new Block(NewName, NewFloorsCount, NewRoomsCount, NewBlockManagerToManage, choosenhostel);
                         ChoosenHostel.BlockList.Add(ReplacedBlock);
                         Console.WriteLine('\n');
-                        Console.WriteLine("Block Edited Successfuly");
+                        Console.WriteLine("Block Edited Successfully");
                         Console.WriteLine("Press Any Button!");
                         Console.ReadKey();
 

@@ -177,7 +177,7 @@ namespace classes
 
                     if (NewRoom != null)
                     {
-                        Console.WriteLine($"Room {i + 1} Definded Successfuly !");
+                        Console.WriteLine($"Room {i + 1} Definded Successfully !");
                         Console.WriteLine("Press Any Button !");
                         Console.ReadKey();
                     }
@@ -236,7 +236,7 @@ namespace classes
                 {
                     blocktomanageitsroom.blockRoom--;
 
-                    Console.WriteLine("Room Removed Successfuly");
+                    Console.WriteLine("Room Removed Successfully");
                     Console.WriteLine("Press Any Button");
                     Console.ReadKey();
 
