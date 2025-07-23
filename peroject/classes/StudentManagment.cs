@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Net.Http;
 using System.Runtime.InteropServices;
@@ -660,7 +661,7 @@ namespace classes
                     Console.WriteLine('\n');
                     Console.Write("Please Enter The Name Of Hostel Wich You Want To Transfer The Student To :");
                     string HostelNameToMove = Console.ReadLine();
-
+                    
                     StudentToMove.StHostel = Hostel.FindHostelByName(HostelNameToMove);
                     Console.WriteLine('\n');
                     Console.WriteLine("Replacing Hostel Successfuly");
@@ -690,7 +691,7 @@ namespace classes
                             Console.WriteLine("List Of Rooms From This Block :");
                             for (int i = 0; i < StudentToMove.StBlock.BlockRoomsList.Count; i++)
                             {
-                                Console.WriteLine($"{i + 1} : Room {StudentToMove.StBlock.BlockRoomsList[i].roomNum}");
+                                Console.WriteLine($"{i + 1} : Room {StudentToMove.StBlock.BlockRoomsList[i].roomNum} , Capacity : {StudentToMove.StBlock.BlockRoomsList[i].capacity}");
                             }
                             Console.WriteLine('\n');
                             Console.Write("Please Enter The Room Nuber Wich You Want To Transfer The Student To :");
@@ -720,6 +721,8 @@ namespace classes
                             Console.ReadKey();
                             Console.Clear();
                             Console.WriteLine("Transfering Student Successfuly");
+                            StudentToMove.StHostel.Capacity--;
+                            StudentToMove.StRoom.capacity--;
                             Console.WriteLine("Press Any Button");
                             Console.ReadKey();
 
@@ -782,27 +785,44 @@ namespace classes
                     }
                 }
                 Student StudentToDisplay = Student.FindStudentByStudentId(StudentIdToDisplay);
-
-                Console.Clear();
-                Console.WriteLine($"Name : {StudentToDisplay.Name}");
-                Console.WriteLine($"Family : {StudentToDisplay.Family}");
-                Console.WriteLine($"National Code : {StudentToDisplay.NationalCode}");
-                Console.WriteLine($"Phone Number : {StudentToDisplay.PhoneNumber}");
-                Console.WriteLine($"Address : {StudentToDisplay.Addres}");
-                Console.WriteLine($"Student Id : {StudentToDisplay.StudentId}");
-                Console.WriteLine('\n');
-                Console.WriteLine($"Student Hostel : {StudentToDisplay.StHostel.Name}");
-                Console.WriteLine($"Student Block : {StudentToDisplay.StBlock.BlockName}");
-                Console.WriteLine($"Student Room : {StudentToDisplay.StRoom.roomNum}");
-                Console.WriteLine('\n');
-                Console.WriteLine("List Of Student Equipment :");
-                for (int i = 0; i < StudentToDisplay.StEquipment.Count; i++)
+                int counter = 0;
+                foreach (var item in Lists.RegisteredStudent)
                 {
-                    Console.WriteLine($"{i+1} : {StudentToDisplay.StEquipment[i].EqType}");
+                    if (item == StudentToDisplay)
+                    {
+                        counter++;
+                    }
                 }
-                Console.WriteLine("\n");
-                Console.WriteLine("Press Any Button");
-                Console.ReadKey();
+
+                if (counter>0)
+                {
+                    Console.Clear();
+                    Console.WriteLine($"Name : {StudentToDisplay.Name}");
+                    Console.WriteLine($"Family : {StudentToDisplay.Family}");
+                    Console.WriteLine($"National Code : {StudentToDisplay.NationalCode}");
+                    Console.WriteLine($"Phone Number : {StudentToDisplay.PhoneNumber}");
+                    Console.WriteLine($"Address : {StudentToDisplay.Addres}");
+                    Console.WriteLine($"Student Id : {StudentToDisplay.StudentId}");
+                    Console.WriteLine('\n');
+                    Console.WriteLine($"Student Hostel : {StudentToDisplay.StHostel.Name}");
+                    Console.WriteLine($"Student Block : {StudentToDisplay.StBlock.BlockName}");
+                    Console.WriteLine($"Student Room : {StudentToDisplay.StRoom.roomNum}");
+                    Console.WriteLine('\n');
+                    Console.WriteLine("List Of Student Equipment :");
+                    for (int i = 0; i < StudentToDisplay.StEquipment.Count; i++)
+                    {
+                        Console.WriteLine($"{i + 1} : {StudentToDisplay.StEquipment[i].EqType}");
+                    }
+                    Console.WriteLine("\n");
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                }
+                else
+                {
+                    Console.WriteLine("Please Register Student In The Hostel First");
+                    Console.WriteLine("Press Any Button");
+                    Console.ReadKey();
+                }
 
             }
             else
